@@ -1,0 +1,31 @@
+uuid: 365e2951-af43-48a5-8d44-afa4f1223bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dvl_film_type
+    - node.type.development
+    - paragraphs.paragraphs_type.film
+  module:
+    - entity_reference_revisions
+id: node.development.field_dvl_film_type
+field_name: field_dvl_film_type
+entity_type: node
+bundle: development
+label: 'Film type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      film: film
+    target_bundles_drag_drop:
+      film:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

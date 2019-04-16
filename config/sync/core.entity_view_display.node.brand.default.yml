@@ -1,0 +1,34 @@
+uuid: 5fbff174-02b2-438c-bc1d-6c07f951abc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.brand.body
+    - field.field.node.brand.field_brand_logo
+    - node.type.brand
+  module:
+    - text
+    - user
+id: node.brand.default
+targetEntityType: node
+bundle: brand
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_brand_logo:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

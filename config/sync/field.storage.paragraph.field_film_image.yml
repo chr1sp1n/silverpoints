@@ -1,0 +1,30 @@
+uuid: a2e13000-3384-458e-b81a-6313ab115e98
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+id: paragraph.field_film_image
+field_name: field_film_image
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: d297b8bf-6a7b-4699-8a2c-53d16367684e
+    alt: 'Film image'
+    title: 'Film image'
+    width: 512
+    height: 512
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: f05820dc-bc00-4e4a-8583-cfe39d807e77
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.chemicals_stop
+id: node.chemicals_stop.promote
+field_name: promote
+entity_type: node
+bundle: chemicals_stop
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

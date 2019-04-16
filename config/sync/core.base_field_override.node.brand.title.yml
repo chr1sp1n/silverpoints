@@ -1,0 +1,18 @@
+uuid: 276f35fc-1c72-4256-93e5-68967f0a5ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.brand
+id: node.brand.title
+field_name: title
+entity_type: node
+bundle: brand
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

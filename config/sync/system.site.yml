@@ -1,0 +1,14 @@
+uuid: c075c002-92d1-4710-9ada-6efe836fd110
+name: 'SIlver Points'
+mail: chr1sp1n.dev@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,81 @@
+uuid: 65f0a1a2-8dea-42b4-a20d-bdf9db7fa3f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.development.field_dvl_date
+    - field.field.node.development.field_dvl_developer
+    - field.field.node.development.field_dvl_film_type
+    - field.field.node.development.field_dvl_notes
+    - field.field.node.development.field_dvl_shoting_daterange
+    - field.field.node.development.field_dvl_stop_bath
+    - node.type.development
+  module:
+    - datetime
+    - datetime_range
+    - entity_reference_revisions
+    - options
+    - text
+    - user
+id: node.development.default
+targetEntityType: node
+bundle: development
+mode: default
+content:
+  field_dvl_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_dvl_developer:
+    type: entity_reference_revisions_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_dvl_film_type:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_dvl_notes:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dvl_shoting_daterange:
+    weight: 104
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_dvl_stop_bath:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

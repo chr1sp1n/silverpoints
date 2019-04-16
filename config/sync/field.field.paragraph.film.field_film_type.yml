@@ -1,0 +1,23 @@
+uuid: 5b5d05be-2c0d-4a54-8a0b-df955fb33a54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_film_type
+    - paragraphs.paragraphs_type.film
+  module:
+    - options
+id: paragraph.film.field_film_type
+field_name: field_film_type
+entity_type: paragraph
+bundle: film
+label: Type
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Black & White negative'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,33 @@
+uuid: 95638fd4-49c9-4b1d-804e-c7708ee16ab2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_film_type
+field_name: field_film_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Black & White negative'
+      label: 'Black & White negative'
+    -
+      value: 'Black & White positive'
+      label: 'Black & White positive'
+    -
+      value: 'Color negative'
+      label: 'Color negative'
+    -
+      value: 'Color positive'
+      label: 'Color positive'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

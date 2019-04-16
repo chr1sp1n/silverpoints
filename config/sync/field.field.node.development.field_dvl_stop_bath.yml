@@ -1,0 +1,21 @@
+uuid: 4538c65f-3fe3-4952-baa2-29feef36939d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dvl_stop_bath
+    - node.type.development
+  module:
+    - options
+id: node.development.field_dvl_stop_bath
+field_name: field_dvl_stop_bath
+entity_type: node
+bundle: development
+label: 'Stop bath'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

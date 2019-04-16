@@ -1,0 +1,21 @@
+uuid: 036d7e5f-cb34-4675-ab98-6bd7a62c56f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_film_brand
+    - paragraphs.paragraphs_type.film
+  module:
+    - options
+id: paragraph.film.field_film_brand
+field_name: field_film_brand
+entity_type: paragraph
+bundle: film
+label: Brand
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

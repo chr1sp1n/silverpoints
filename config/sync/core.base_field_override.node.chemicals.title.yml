@@ -1,0 +1,18 @@
+uuid: 2333d348-6b75-45b8-a9a3-e547d1e5bd98
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.chemicals_stop
+id: node.chemicals_stop.title
+field_name: title
+entity_type: node
+bundle: chemicals_stop
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

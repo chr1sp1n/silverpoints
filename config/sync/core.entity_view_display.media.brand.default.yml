@@ -1,0 +1,53 @@
+uuid: ef8e8ba3-d3cf-4581-98f4-3d0e2785254a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.brand.field_media_image_1
+    - image.style.thumbnail
+    - media.type.brand
+  module:
+    - image
+    - user
+id: media.brand.default
+targetEntityType: media
+bundle: brand
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_media_image_1:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  thumbnail:
+    type: image
+    weight: 5
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    region: content
+    third_party_settings: {  }
+  uid:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  name: true

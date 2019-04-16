@@ -1,0 +1,69 @@
+uuid: be664b7a-8833-4735-ac97-a2822dd5eb1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.film.field_film_brand
+    - field.field.paragraph.film.field_film_dx
+    - field.field.paragraph.film.field_film_image
+    - field.field.paragraph.film.field_film_name
+    - field.field.paragraph.film.field_film_nominal_iso
+    - field.field.paragraph.film.field_film_type
+    - paragraphs.paragraphs_type.film
+  module:
+    - image
+    - options
+id: paragraph.film.default
+targetEntityType: paragraph
+bundle: film
+mode: default
+content:
+  field_film_brand:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_film_dx:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_film_image:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_film_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_film_nominal_iso:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_film_type:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 38beff99-49d2-4d38-be9f-27b5297cb980
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_dvl_stop_bath
+field_name: field_dvl_stop_bath
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Stop
+      label: Stop
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

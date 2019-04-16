@@ -1,0 +1,22 @@
+uuid: 90935aa0-6fd9-487d-a2b7-71fe37223cb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.chemicals_stop
+  module:
+    - text
+id: node.chemicals_stop.body
+field_name: body
+entity_type: node
+bundle: chemicals_stop
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

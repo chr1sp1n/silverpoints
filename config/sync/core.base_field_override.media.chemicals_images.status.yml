@@ -1,0 +1,22 @@
+uuid: 22a1d4c5-542d-4ad3-b497-417c5501d8bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.chemicals_images
+id: media.chemicals_images.status
+field_name: status
+entity_type: media
+bundle: chemicals_images
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

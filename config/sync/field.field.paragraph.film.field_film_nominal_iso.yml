@@ -1,0 +1,23 @@
+uuid: 69ffbb5b-a5c5-4f03-b0d4-0b0d7d7885c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_film_nominal_iso
+    - paragraphs.paragraphs_type.film
+  module:
+    - options
+id: paragraph.film.field_film_nominal_iso
+field_name: field_film_nominal_iso
+entity_type: paragraph
+bundle: film
+label: 'Nominal ISO'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '100'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

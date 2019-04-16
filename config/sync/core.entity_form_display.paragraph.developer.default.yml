@@ -1,0 +1,31 @@
+uuid: 5c1ea7b1-4fc0-4a7f-a09e-8623faa67cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.developer.field_developer_brand
+    - field.field.paragraph.developer.field_developer_name
+    - paragraphs.paragraphs_type.developer
+id: paragraph.developer.default
+targetEntityType: paragraph
+bundle: developer
+mode: default
+content:
+  field_developer_brand:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_developer_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

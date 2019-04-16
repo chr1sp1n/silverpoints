@@ -1,0 +1,48 @@
+uuid: 456f6cab-2d0c-42c8-ac55-dd845060ecd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_film_brand
+field_name: field_film_brand
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Agfa
+      label: Agfa
+    -
+      value: Efke
+      label: Efke
+    -
+      value: Foma
+      label: Foma
+    -
+      value: Fomapan
+      label: Fomapan
+    -
+      value: Fuji
+      label: Fuji
+    -
+      value: Ilford
+      label: Ilford
+    -
+      value: Kodak
+      label: Kodak
+    -
+      value: Lomo
+      label: Lomo
+    -
+      value: Rollei
+      label: Rollei
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
