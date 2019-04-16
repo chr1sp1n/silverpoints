@@ -1,0 +1,22 @@
+uuid: d456758f-4fe1-442e-b257-562225c25f67
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.film_image
+id: media.film_image.status
+field_name: status
+entity_type: media
+bundle: film_image
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

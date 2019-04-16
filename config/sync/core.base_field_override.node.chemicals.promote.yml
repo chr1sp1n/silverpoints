@@ -1,13 +1,13 @@
-uuid: f05820dc-bc00-4e4a-8583-cfe39d807e77
+uuid: 40d7a6d4-5141-4971-ac3f-61c1b13f642d
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.chemicals_stop
-id: node.chemicals_stop.promote
+    - node.type.chemicals
+id: node.chemicals.promote
 field_name: promote
 entity_type: node
-bundle: chemicals_stop
+bundle: chemicals
 label: 'Promoted to front page'
 description: ''
 required: false

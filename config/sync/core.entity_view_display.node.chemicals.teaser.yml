@@ -1,17 +1,17 @@
-uuid: fe483503-7243-47e7-ae9d-3e9d2f0ae9ea
+uuid: b8df791d-21d7-4b68-b194-eb85c38a19d9
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.chemicals_stop.body
-    - node.type.chemicals_stop
+    - field.field.node.chemicals.body
+    - node.type.chemicals
   module:
     - text
     - user
-id: node.chemicals_stop.teaser
+id: node.chemicals.teaser
 targetEntityType: node
-bundle: chemicals_stop
+bundle: chemicals
 mode: teaser
 content:
   body:

@@ -1,0 +1,28 @@
+uuid: 143da77a-9552-4e2a-bcc5-60f8eeac4cda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dvl_development
+    - node.type.chemicals
+    - node.type.development
+id: node.development.field_dvl_development
+field_name: field_dvl_development
+entity_type: node
+bundle: development
+label: 'Development bath'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      chemicals: chemicals
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

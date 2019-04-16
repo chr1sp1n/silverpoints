@@ -1,0 +1,30 @@
+uuid: c32055d6-6ac9-45f2-bfe0-17c479f01f09
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.film.body
+    - node.type.film
+  module:
+    - text
+    - user
+id: node.film.teaser
+targetEntityType: node
+bundle: film
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

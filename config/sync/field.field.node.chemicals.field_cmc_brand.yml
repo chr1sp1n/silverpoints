@@ -1,28 +1,21 @@
-uuid: dd2dd21c-d6ed-4fd4-a5b5-f2650d183c8b
+uuid: e538a842-008e-4b76-aa92-c1b46598f17f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_cmc_brand
-    - node.type.brand
-    - node.type.chemicals_stop
-id: node.chemicals_stop.field_cmc_brand
+    - node.type.chemicals
+id: node.chemicals.field_cmc_brand
 field_name: field_cmc_brand
 entity_type: node
-bundle: chemicals_stop
+bundle: chemicals
 label: Brand
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:node'
-  handler_settings:
-    target_bundles:
-      brand: brand
-    sort:
-      field: _none
-    auto_create: false
-    auto_create_bundle: ''
+  handler_settings: {  }
 field_type: entity_reference

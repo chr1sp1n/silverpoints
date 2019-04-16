@@ -1,0 +1,9 @@
+uuid: b4f8e30b-7893-44b7-b42f-faa6f938eb7a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Film formats'
+vid: film_formats
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,22 @@
+uuid: cc38f422-add2-426b-9a52-04f4a9c0c61b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: films
+label: Film
+type: 'canonical_entities:node'
+pattern: '/film/[node:title]'
+selection_criteria:
+  9330fcf3-21f0-470e-9f69-04c5ceb8f6fd:
+    id: node_type
+    bundles:
+      film: film
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9330fcf3-21f0-470e-9f69-04c5ceb8f6fd
+selection_logic: and
+weight: -5
+relationships: {  }

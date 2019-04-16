@@ -3,7 +3,7 @@ langcode: en
 status: false
 dependencies: {  }
 id: chemicals_images
-label: 'Chemicals images'
+label: 'Chemicals image'
 description: ''
 source: image
 queue_thumbnail_downloads: false

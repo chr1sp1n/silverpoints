@@ -1,0 +1,27 @@
+uuid: 8e66207c-6eef-4c3b-b1df-92f23b5a086f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_dvl_format
+field_name: field_dvl_format
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 35mm
+      label: 35mm
+    -
+      value: 6x6
+      label: 6x6
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

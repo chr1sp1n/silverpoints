@@ -1,0 +1,28 @@
+uuid: 44c36f32-b669-44d1-bd53-65332ce605de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flm_images
+    - media.type.film_image
+    - node.type.film
+id: node.film.field_flm_images
+field_name: field_flm_images
+entity_type: node
+bundle: film
+label: Images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      film_image: film_image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

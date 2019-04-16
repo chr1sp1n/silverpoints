@@ -1,13 +1,13 @@
-uuid: f9618271-b656-4ad0-b987-61a23e5edb44
+uuid: 88e72d36-0274-4e57-abf7-b94282d4ef4c
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.chemicals_stop
-id: node.chemicals_stop.status
+    - node.type.chemicals
+id: node.chemicals.status
 field_name: status
 entity_type: node
-bundle: chemicals_stop
+bundle: chemicals
 label: Published
 description: ''
 required: false

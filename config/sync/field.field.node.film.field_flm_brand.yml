@@ -1,0 +1,28 @@
+uuid: 2df53f14-8ebf-4dcf-9273-2a94d5bcd55b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_flm_brand
+    - node.type.brand
+    - node.type.film
+id: node.film.field_flm_brand
+field_name: field_flm_brand
+entity_type: node
+bundle: film
+label: Brand
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      brand: brand
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

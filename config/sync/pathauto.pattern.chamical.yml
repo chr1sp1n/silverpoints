@@ -1,0 +1,22 @@
+uuid: a6be2e8a-8e0f-40e9-bf41-c341bb4b5a7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: chamical
+label: Chamical
+type: 'canonical_entities:node'
+pattern: '/chamical/[node:title]'
+selection_criteria:
+  a9fd1359-6555-4df7-b887-7c0f8391092f:
+    id: node_type
+    bundles:
+      chemicals: chemicals
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a9fd1359-6555-4df7-b887-7c0f8391092f
+selection_logic: and
+weight: -5
+relationships: {  }

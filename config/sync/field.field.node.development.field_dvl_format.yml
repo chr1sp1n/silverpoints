@@ -1,0 +1,23 @@
+uuid: af115cb3-45db-492d-a6fa-8a4034e6e477
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dvl_format
+    - node.type.development
+  module:
+    - options
+id: node.development.field_dvl_format
+field_name: field_dvl_format
+entity_type: node
+bundle: development
+label: 'Film format'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 35mm
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,13 @@
+uuid: 9cc68b6e-b601-4d85-ab92-65a21c3f2318
+langcode: en
+status: false
+dependencies: {  }
+id: film_image
+label: 'Film image'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

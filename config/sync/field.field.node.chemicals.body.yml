@@ -1,16 +1,16 @@
-uuid: 90935aa0-6fd9-487d-a2b7-71fe37223cb9
+uuid: ef605461-6f81-4248-8f4d-12ebf56913bf
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.chemicals_stop
+    - node.type.chemicals
   module:
     - text
-id: node.chemicals_stop.body
+id: node.chemicals.body
 field_name: body
 entity_type: node
-bundle: chemicals_stop
+bundle: chemicals
 label: Body
 description: ''
 required: false
