@@ -25,4 +25,4 @@
 
 node_modules
 .vscode
-web/theme/custom
+web/themes/custom/*
