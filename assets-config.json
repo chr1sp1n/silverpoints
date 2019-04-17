@@ -14,7 +14,13 @@
 			"src":			"{{source.path}}/libraries/global/js",
 			"dest":			"{{temp_path}}/libraries/global/js",
 			"cocat_to":		"scripts.js"
-		}
+    },
+    "exclude" : [
+      "node_modules",
+      "package-lock.json",
+      "package.json",
+      "README.md"
+    ]
 	},
 
 	"notifier":{

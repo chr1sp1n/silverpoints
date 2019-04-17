@@ -14,7 +14,8 @@
 			"src":			"{{source.path}}/js",
 			"dest":			"{{temp_path}}/js",
 			"cocat_to":		"scripts.js"
-		}
+    },
+    "exclude" : []
 	},
 
 	"notifier":{

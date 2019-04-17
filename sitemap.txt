@@ -1,0 +1,19 @@
+home (frase d'effetto, last 3 dvls, tools introduction, tutoirials)
+  |__ tools (public)
+  |   |__ view tools (title and description)
+  |       |__ tool 1
+  |       |__ tool 2
+  |       |__ tool ...
+  |__ dvls (public)
+  |   |__ view films (preview) (filter by my film if authenticated, all films, film type, dvl type)
+  |       |__ film 1
+  |       |__ film 2
+  |       |__ film ...
+  |__ tutorials (public)
+  |   |__ view tutorials (preview)
+  |       |__ tutorial 1
+  |       |__ tutorial 2
+  |       |__ tutorial ...
+  |__ user
+  |   |__ profile
+  |   |__ link to mt dvls
