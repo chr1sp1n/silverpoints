@@ -1,51 +1,52 @@
-import {TweenLite} from "gsap/TweenLite";
-import $ from "jquery";
+'use strict';
+;(function($, TweenLite){
 
-var Animations = function(animatioTime){
-	var $brand = $('.brand');
-	var $lines = $brand.find('.line');
-	var $letters = $brand.find('span');
-	var ut = animatioTime / $letters.length;
+  var animations = function(animatioTime){
+    var $brand = $('.brand');
+    var $lines = $brand.find('.line');
+    var $words = $brand.find('.words');
 
-	var rds = [];
-	$letters.each(function(i){
-		if(i == $letters.length - 1){
-			rds.push(rds[0]);
-		}else{
-			rds.push( Math.random() * (animatioTime * 3/4) );
-		}
-	});
+    var letters = $words.text();
+    $words.html('');
+    for(var l = 0; l < letters.length; ++l){
+      $words.append('<span>'+ letters[l] +'</span>');
+    }
+    var $letters = $words.find('span');
 
-	TweenLite.to( $lines.first(), (animatioTime * 1/4) + rds[0], {
-		'flex': 1.2,
-		opacity: 1,
-		ease: Power4.easeIn,
-		onComplete: function(){
-			TweenLite.to('#main', 1, {
-				opacity: 1, ease: Power4.easeIn
-			});
-		}
-	});
+    var rds = [];
+    $letters.each(function(i, el){
+      if(i == $letters.length - 1){
+        rds.push(rds[0]);
+      }else{
+        rds.push( Math.random() * (animatioTime * 3/4) );
+      }
+      TweenLite.to( el, (animatioTime * 1/4) + rds[i], {
+        opacity: 1,
+        ease: Power4.easeIn
+      });
+    });
 
-	TweenLite.to( $lines.last(), (animatioTime * 1/4) + rds[$letters.length - 1], {
-		'flex': 1.2,
-		opacity: 1,
-		ease: Power4.easeIn,
-		onComplete: function(){
-			TweenLite.to('#main', 1, {
-				opacity: 1, ease: Power4.easeIn
-			});
-		}
-	});
+    TweenLite.to( $lines.first(), (animatioTime * 1/4) + rds[0], {
+      'flex': 1.2,
+      opacity: 1,
+      ease: Power4.easeIn,
+      onComplete: function(){
+        TweenLite.to('#main', 1, {
+          opacity: 1, ease: Power4.easeIn
+        });
+      }
+    });
 
-	$letters.each(function(i){
-		var $span = $brand.find('span').eq(i);
-		TweenLite.to( $span, (animatioTime * 1/4) + rds[i], {
-			opacity: 1,
-			ease: Power4.easeIn
-		});
-	});
+    TweenLite.to( $lines.last(), (animatioTime * 1/4) + rds[$letters.length - 1], {
+      'flex': 1.2,
+      opacity: 1,
+      ease: Power4.easeIn,
+      onComplete: function(){}
+    });
 
-}
+  }
 
-export { Animations as default };
+  window.Animations = animations;
+
+}(jQuery, TweenLite));
+

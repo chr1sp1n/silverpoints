@@ -28,6 +28,7 @@ module:
   link: 0
   media: 0
   media_library: 0
+  menu_breadcrumb: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -37,7 +38,9 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  simple_menu_icons: 0
   statistics: 0
+  svg_image: 0
   syslog: 0
   system: 0
   taxonomy: 0
@@ -57,6 +60,7 @@ theme:
   classy: 0
   bartik: 0
   seven: 0
+  silver_points: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

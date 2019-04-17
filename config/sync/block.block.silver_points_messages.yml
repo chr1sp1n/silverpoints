@@ -1,0 +1,22 @@
+uuid: 80e33424-5da4-4dbf-ae75-a0269b680053
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - silver_points
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: silver_points_messages
+theme: silver_points
+region: breadcrumb
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,13 @@
+header{
+  position: relative;
+  height: $header-height;
+  &>div{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .page-title{
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

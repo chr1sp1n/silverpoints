@@ -1,0 +1,22 @@
+uuid: 58263fdc-c52b-4993-9f99-d7d8047f11b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - silver_points
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: silver_points_content
+theme: silver_points
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

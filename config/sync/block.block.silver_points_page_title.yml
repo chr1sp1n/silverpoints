@@ -1,0 +1,20 @@
+uuid: 79cc20e1-b821-4c3d-a299-868303243536
+langcode: en
+status: true
+dependencies:
+  theme:
+    - silver_points
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: silver_points_page_title
+theme: silver_points
+region: header
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,7 +1,6 @@
 'use strict';
-
-import { Animations } from './animations';
-
-$(document).ready(function(){
-	Animations(2.5);
-});
+;(function($, Drupal, drupalSettings){
+  $(document).ready(function(){
+    window.Animations(2.5);
+  });
+}(jQuery, Drupal, drupalSettings));

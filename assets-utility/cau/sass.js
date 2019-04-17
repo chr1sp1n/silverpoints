@@ -8,7 +8,7 @@ const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const cssnano = require("cssnano");
+//const cssnano = require("cssnano");
 const path = require('path');
 
 module.exports = {
@@ -43,7 +43,7 @@ module.exports = {
 			.pipe(
 				postcss([
 					autoprefixer(),
-					cssnano()
+					//cssnano()
 				])
 			)
 			//.pipe(sourcemaps.write())

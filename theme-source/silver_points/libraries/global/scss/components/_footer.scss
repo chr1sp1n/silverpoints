@@ -1,0 +1,56 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+
+  &>.menu{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 18px;
+    &>li{
+      display: inline-block;
+      margin: 0;
+      &.active{
+        a{ color: black; }
+      }
+    }
+    &.main{
+      padding-left: 30px;
+      left: 0;
+    }
+    &.account{
+      padding-right: 30px;
+      right: 0;
+    }
+    .menu-icon{
+      a{
+        display: block;
+        text-align: center;
+        background-size: 28px 28px;
+        background-position: center top !important;
+        font-size: 12px;
+        padding-top: 33px;
+        color: transparent;
+        transition: color $transitions-base-time;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 40px;
+        height: 26px;
+        &:focus,
+        &:hover{
+          color: black;
+        }
+        position: relative;
+        &>span{
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
