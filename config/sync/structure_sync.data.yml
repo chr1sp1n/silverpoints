@@ -1,0 +1,73 @@
+menus:
+  -
+    menu_name: main
+    title: Strumenti
+    parent: null
+    uri: 'internal:/tools'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: 2f471018-61f3-4741-a2fc-99be1ea3fcd4
+  -
+    menu_name: main
+    title: Guide
+    parent: null
+    uri: 'internal:/tutorial'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: en
+    uuid: 11eee732-70b8-4ac9-b529-65599b54fe4f
+  -
+    menu_name: main
+    title: Pellicole
+    parent: null
+    uri: 'internal:/films'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: en
+    uuid: 1a9dc151-92dc-4f87-b604-272f12ded8e6
+  -
+    menu_name: account
+    title: 'Area personale'
+    parent: null
+    uri: 'internal:/user'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 47a1c59c-bc85-46c2-93cb-969b5511752f
+  -
+    menu_name: account
+    title: Logout
+    parent: null
+    uri: 'internal:/user/logout'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 9c38d799-4a34-42d5-a482-9f9ff507f92a
+  -
+    menu_name: account
+    title: Login
+    parent: null
+    uri: 'internal:/user/login'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '0'
+    langcode: en
+    uuid: 330e8000-2460-4042-99df-9fc627d2165a
