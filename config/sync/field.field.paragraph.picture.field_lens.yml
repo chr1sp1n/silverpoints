@@ -1,0 +1,19 @@
+uuid: ae6e4a7e-00e1-4b70-b5cb-a291942a2f19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lens
+    - paragraphs.paragraphs_type.picture
+id: paragraph.picture.field_lens
+field_name: field_lens
+entity_type: paragraph
+bundle: picture
+label: Lens
+description: 'With what objective you took this photo'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

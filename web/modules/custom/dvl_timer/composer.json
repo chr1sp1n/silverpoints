@@ -1,0 +1,14 @@
+{
+  "name": "drupal/dvl_timer",
+  "type": "drupal-module",
+  "description": "DVL Timer",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/dvl_timer",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/dvl_timer",
+    "source": "http://cgit.drupalcode.org/dvl_timer"
+  },
+  "require": { }
+}

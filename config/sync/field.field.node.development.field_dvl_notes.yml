@@ -11,7 +11,7 @@ id: node.development.field_dvl_notes
 field_name: field_dvl_notes
 entity_type: node
 bundle: development
-label: 'Development notes'
+label: Notes
 description: ''
 required: false
 translatable: false

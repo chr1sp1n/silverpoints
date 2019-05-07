@@ -1,0 +1,9 @@
+uuid: 76793507-17a6-48ff-8e5e-8b1a51d7b543
+langcode: en
+status: true
+dependencies: {  }
+name: 'Stop bath'
+vid: stop_bath
+description: ''
+hierarchy: 0
+weight: 0

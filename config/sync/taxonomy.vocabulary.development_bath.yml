@@ -1,0 +1,9 @@
+uuid: dfa476fa-3783-4acc-9a94-481d7cf4e77e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Development bath'
+vid: development_bath
+description: ''
+hierarchy: 0
+weight: 0

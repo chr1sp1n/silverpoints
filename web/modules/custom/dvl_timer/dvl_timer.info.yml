@@ -1,0 +1,5 @@
+name: 'DVL Timer'
+type: module
+description: 'DVL Timer'
+core: 8.x
+package: 'chr1sp1n'

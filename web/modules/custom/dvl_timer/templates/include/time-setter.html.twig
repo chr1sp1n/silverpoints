@@ -1,0 +1,57 @@
+
+{% set images_path = base_url ~ '/' ~ module_path ~ '/libraries/dvl_timer/images/' %}
+
+<div class="hours-minute-seconds">
+  <div class="labels d-flex justify-content-around">
+    <label>Hours</label>
+    <label>Minutes</label>
+    <label>Seconds</label>
+  </div>
+  <div class="hours">
+    <button class="up btn btn-default">
+      <img src="{{images_path}}up-arrow.svg"/>
+    </button>
+    <div class="value">
+      <div class="values">
+        {% for i in 0..2 %}
+            <div>{{ i }}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <button class="down btn btn-default">
+      <img src="{{images_path}}down-arrow.svg"/>
+    </button>
+  </div>
+  <span> : </span>
+  <div class="minutes">
+    <button class="up btn btn-default">
+      <img src="{{images_path}}up-arrow.svg"/>
+    </button>
+    <div class="value">
+      <div class="values">
+        {% for i in 0..59 %}
+            <div>{{ i < 10 ? '0' ~ i : i }}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <button class="down btn btn-default">
+      <img src="{{images_path}}down-arrow.svg"/>
+    </button>
+  </div>
+  <span> : </span>
+  <div class="seconds">
+    <button class="up btn btn-default">
+      <img src="{{images_path}}up-arrow.svg"/>
+    </button>
+    <div class="value">
+      <div class="values">
+        {% for i in 0..59 %}
+            <div>{{ i < 10 ? '0' ~ i : i }}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <button class="down btn btn-default">
+      <img src="{{images_path}}down-arrow.svg"/>
+    </button>
+  </div>
+</div>

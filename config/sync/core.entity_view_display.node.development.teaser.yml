@@ -4,17 +4,38 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.development.field_development_bath
+    - field.field.node.development.field_dvl_date
+    - field.field.node.development.field_dvl_frames
+    - field.field.node.development.field_dvl_notes
+    - field.field.node.development.field_fix_bath
+    - field.field.node.development.field_stop_bath
     - node.type.development
   module:
+    - entity_reference_revisions
     - user
 id: node.development.teaser
 targetEntityType: node
 bundle: development
 mode: teaser
 content:
+  field_dvl_frames:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_development_bath: true
+  field_dvl_date: true
+  field_dvl_notes: true
+  field_fix_bath: true
+  field_stop_bath: true

@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains dvl_timer.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dvl_timer_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dvl_timer module.
+    case 'help.page.dvl_timer':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('DVL Timer') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dvl_timer_theme() {
+  $modulePath = drupal_get_path('module', 'dvl_timer');
+
+  $theme = [
+    'dvl_timer' => [
+      'template' => 'dvl-timer',
+      'path' => $modulePath . '/templates',
+      'variables' => [
+        'module_path' => NULL,
+        'data' => NULL,
+        'base_url' => NULL,
+      ],
+    ],
+  ];
+
+  return $theme;
+}

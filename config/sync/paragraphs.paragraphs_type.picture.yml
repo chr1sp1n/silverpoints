@@ -1,0 +1,11 @@
+uuid: 631a7e5c-43f9-4c86-8274-d9977203005d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:586db955-41bf-4576-809c-eee982b10dc5'
+id: picture
+label: Picture
+icon_uuid: 586db955-41bf-4576-809c-eee982b10dc5
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: 8302e8ae-7fea-48c9-80be-58e06a5c9832
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tool.field_block
+    - node.type.tool
+  module:
+    - user
+id: node.tool.teaser
+targetEntityType: node
+bundle: tool
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_block: true

@@ -1,0 +1,21 @@
+uuid: 54518c43-f2d9-49c3-be15-95e68e4296cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.picture
+  module:
+    - datetime
+id: paragraph.picture.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: picture
+label: Date
+description: 'When you took this picture.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

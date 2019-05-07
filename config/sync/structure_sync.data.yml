@@ -1,3 +1,50 @@
+taxonomies:
+  development_bath:
+    -
+      vid: development_bath
+      tid: '3'
+      langcode: en
+      name: XTOL
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ee4ad30d-6723-437e-90df-d259a9590562
+  film_formats:
+    -
+      vid: film_formats
+      tid: '1'
+      langcode: en
+      name: 35mm
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 520aa747-162a-430f-8d69-957bc2d03bdf
+    -
+      vid: film_formats
+      tid: '2'
+      langcode: en
+      name: 6x6
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f21e5f76-6bee-4f8e-a84f-f0999934caa8
+  fix_bath:
+    -
+      vid: fix_bath
+      tid: '4'
+      langcode: en
+      name: 'Rapid fixer'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 93d1242a-6d92-448b-8767-a21b9900caca
+  stop_bath: {  }
+  tags: {  }
+blocks: {  }
 menus:
   -
     menu_name: main
@@ -35,6 +82,18 @@ menus:
     weight: '-47'
     langcode: en
     uuid: 1a9dc151-92dc-4f87-b604-272f12ded8e6
+  -
+    menu_name: main
+    title: 'DVL Timer'
+    parent: 'menu_link_content:2f471018-61f3-4741-a2fc-99be1ea3fcd4'
+    uri: 'internal:/tools/dvl-timer'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: 9d84f4c4-3ccd-421b-9aa5-1ab9e4a8770f
   -
     menu_name: account
     title: 'Area personale'

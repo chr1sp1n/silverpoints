@@ -1,0 +1,9 @@
+dvl_timer:
+  version: 1.x
+  css:
+    theme:
+      libraries/dvl_timer/css/styles.css: {}
+  js:
+    libraries/dvl_timer/js/main.js: {}
+  dependencies:
+    - core/jquery

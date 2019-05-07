@@ -1,0 +1,29 @@
+uuid: 0524e8a1-f3a8-49c6-b27b-8e76322e26f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tool.field_block
+    - node.type.tool
+  module:
+    - user
+id: node.tool.default
+targetEntityType: node
+bundle: tool
+mode: default
+content:
+  field_block:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

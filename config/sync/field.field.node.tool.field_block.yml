@@ -1,0 +1,23 @@
+uuid: bf2c4246-6079-4ea5-9e67-d40495b61489
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block
+    - node.type.tool
+id: node.tool.field_block
+field_name: field_block
+entity_type: node
+bundle: tool
+label: Block
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

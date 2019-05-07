@@ -1,0 +1,29 @@
+uuid: 1b1ceb23-f4e8-4371-beb1-76a74ce0c718
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fix_bath
+    - node.type.development
+    - taxonomy.vocabulary.fix_bath
+id: node.development.field_fix_bath
+field_name: field_fix_bath
+entity_type: node
+bundle: development
+label: 'Fix bath'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fix_bath: fix_bath
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

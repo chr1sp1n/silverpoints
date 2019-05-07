@@ -1,0 +1,61 @@
+uuid: e6ce7325-2e25-4d16-a165-5651def96fcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.picture.field_date
+    - field.field.paragraph.picture.field_filters
+    - field.field.paragraph.picture.field_lens
+    - field.field.paragraph.picture.field_location
+    - field.field.paragraph.picture.field_picture
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.picture
+  module:
+    - datetime
+    - geofield
+    - svg_image
+id: paragraph.picture.default
+targetEntityType: paragraph
+bundle: picture
+mode: default
+content:
+  field_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_filters:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_lens:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_location:
+    weight: 1
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  field_picture:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

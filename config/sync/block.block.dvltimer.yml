@@ -1,0 +1,20 @@
+uuid: 0b645e31-8fe2-496d-ae72-dc231ec90357
+langcode: en
+status: true
+dependencies:
+  module:
+    - dvl_timer
+  theme:
+    - silver_points
+id: dvltimer
+theme: silver_points
+region: hidden
+weight: 0
+provider: null
+plugin: dvl_timer_block
+settings:
+  id: dvl_timer_block
+  label: 'DVL Timer'
+  provider: dvl_timer
+  label_display: '0'
+visibility: {  }
