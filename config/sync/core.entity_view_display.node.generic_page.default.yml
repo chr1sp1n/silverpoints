@@ -1,0 +1,24 @@
+uuid: 2a6817cd-c597-463b-adde-0b360cba6853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.generic_page.body
+    - node.type.generic_page
+  module:
+    - text
+    - user
+id: node.generic_page.default
+targetEntityType: node
+bundle: generic_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

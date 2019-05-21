@@ -1,0 +1,18 @@
+uuid: 6086b97e-bbab-4cd3-9911-ece55042640b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Generic page'
+type: generic_page
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

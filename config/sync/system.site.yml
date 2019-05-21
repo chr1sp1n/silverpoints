@@ -1,10 +1,10 @@
 uuid: c075c002-92d1-4710-9ada-6efe836fd110
-name: test
+name: silverpoints
 mail: chr1sp1n.dev@gmail.com
 slogan: ''
 page:
-  403: ''
-  404: ''
+  403: /node/8
+  404: /node/7
   front: /node
 admin_compact_mode: false
 weight_select_max: 100

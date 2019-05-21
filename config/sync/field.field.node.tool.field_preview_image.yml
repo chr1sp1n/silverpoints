@@ -1,0 +1,38 @@
+uuid: 6a17c7ba-cb7c-437c-8795-4620adf2bf59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preview_image
+    - node.type.tool
+  module:
+    - image
+id: node.tool.field_preview_image
+field_name: field_preview_image
+entity_type: node
+bundle: tool
+label: 'Preview image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: tools/preview
+  file_extensions: 'png jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: '[current-page:title]'
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

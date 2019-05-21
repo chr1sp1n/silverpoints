@@ -1,3 +1,4 @@
+blocks: {  }
 taxonomies:
   development_bath:
     -
@@ -44,20 +45,7 @@ taxonomies:
       uuid: 93d1242a-6d92-448b-8767-a21b9900caca
   stop_bath: {  }
   tags: {  }
-blocks: {  }
 menus:
-  -
-    menu_name: main
-    title: Strumenti
-    parent: null
-    uri: 'internal:/tools'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '0'
-    weight: '-49'
-    langcode: en
-    uuid: 2f471018-61f3-4741-a2fc-99be1ea3fcd4
   -
     menu_name: main
     title: Guide
@@ -79,9 +67,21 @@ menus:
     description: null
     enabled: '1'
     expanded: '0'
-    weight: '-47'
+    weight: '-49'
     langcode: en
     uuid: 1a9dc151-92dc-4f87-b604-272f12ded8e6
+  -
+    menu_name: main
+    title: Strumenti
+    parent: null
+    uri: 'internal:/tools'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-47'
+    langcode: en
+    uuid: 2f471018-61f3-4741-a2fc-99be1ea3fcd4
   -
     menu_name: main
     title: 'DVL Timer'
@@ -94,6 +94,18 @@ menus:
     weight: '0'
     langcode: en
     uuid: 9d84f4c4-3ccd-421b-9aa5-1ab9e4a8770f
+  -
+    menu_name: account
+    title: Login
+    parent: null
+    uri: 'internal:/user/login'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '1'
+    weight: '0'
+    langcode: en
+    uuid: 330e8000-2460-4042-99df-9fc627d2165a
   -
     menu_name: account
     title: 'Area personale'
@@ -118,15 +130,3 @@ menus:
     weight: '0'
     langcode: en
     uuid: 9c38d799-4a34-42d5-a482-9f9ff507f92a
-  -
-    menu_name: account
-    title: Login
-    parent: null
-    uri: 'internal:/user/login'
-    link_title: ''
-    description: null
-    enabled: '1'
-    expanded: '1'
-    weight: '0'
-    langcode: en
-    uuid: 330e8000-2460-4042-99df-9fc627d2165a

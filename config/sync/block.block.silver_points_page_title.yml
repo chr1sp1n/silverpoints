@@ -9,7 +9,7 @@ _core:
 id: silver_points_page_title
 theme: silver_points
 region: header
-weight: -6
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

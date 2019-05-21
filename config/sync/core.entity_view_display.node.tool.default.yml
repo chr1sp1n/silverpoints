@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.tool.field_block
+    - field.field.node.tool.field_description
+    - field.field.node.tool.field_preview_image
     - node.type.tool
   module:
     - user
@@ -13,7 +15,7 @@ bundle: tool
 mode: default
 content:
   field_block:
-    weight: 102
+    weight: 0
     label: hidden
     settings:
       link: true
@@ -21,9 +23,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_description: true
+  field_preview_image: true
+  links: true
