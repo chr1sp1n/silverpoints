@@ -1,0 +1,32 @@
+
+a{
+  color: $footer-background;
+  display: inline-block;
+  position: relative;
+  transition: color .4s ease-out;
+
+
+  &:before{
+    display: block;
+    content: '';
+    width: 0;
+    background-color: $footer-background;
+    transition: width .3s ease-out;
+    transition-delay: .1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  &:focus:not(.no-decoration),
+  &:active:not(.no-decoration),
+  &.active:not(.no-decoration),
+  &:hover:not(.no-decoration){
+    * { position: relative;}
+    text-decoration: none;
+    color: $footer-foreground;
+    &:before{
+      width: 100%;
+    }
+  }
+}

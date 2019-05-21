@@ -9,7 +9,6 @@ libraries:
 base theme: classy
 regions:
   header: 'Header'
-  breadcrumb: 'Breadcrumb'
   content: 'Content'
   footer: 'Footer'
   hidden: 'Hidden'

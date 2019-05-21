@@ -1,5 +1,6 @@
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "./variables";
+@import "./theme";
 @import "../../../../node_modules/bootstrap/scss/mixins";
 @import "../../../../node_modules/bootstrap/scss/root";
 @import "../../../../node_modules/bootstrap/scss/reboot";
@@ -36,12 +37,12 @@
 @import "../../../../node_modules/bootstrap/scss/utilities";
 @import "../../../../node_modules/bootstrap/scss/print";
 
-//-----------------------------------------------------
-@import "./theme";
 
 //-----------------------------------------------------
+@import "./commons/anchor";
 @import "./commons/buttons";
 @import "./commons/brand";
+@import "./commons/breadcrumb";
 
 //-----------------------------------------------------
 @import "./components/header";
@@ -53,4 +54,7 @@
 @import "./layout/main";
 
 //-----------------------------------------------------
-@import "./pages/dev-timer.scss";
+@import "./content/node";
+
+//-----------------------------------------------------
+@import "./pages/dev-timer";

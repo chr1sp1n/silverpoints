@@ -1,1 +1,58 @@
 <?php
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+// System redirections
+  $route_name= \Drupal::routeMatch()->getRouteName();
+
+  // Register route or forget password redirected to Homepage
+  if ($route_name=='user.pass' || $route_name=='user.register') {
+    $r = new RedirectResponse(\Drupal::url('<front>'));
+    $r->send();
+  }
+
+  // User login route redirected to Homepage if not in admin domain
+  if ( $route_name == 'user.login' && strpos($_SERVER['SERVER_NAME'], "admin.") === false ) {
+    $r = new RedirectResponse(\Drupal::url('<front>'));
+    $r->send();
+  }
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+/**
+ * Implements hook_theme_suggestions_container_alter().
+ */
+function silver_points_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+  $suggestions = add_suggestion($suggestions, $variables);
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+/**
+ * normalize element id
+ *
+ * @param string $value
+ * @return void
+ */
+function normalize(string $value){
+	return strtolower(str_replace(['-', ' '], ['_', '_'], $value));
+}
+/**
+ * add_suggestion
+ *
+ * @param array $suggestions
+ * @param array $variables
+ * @return void
+ */
+function add_suggestion(array $suggestions, array &$variables){
+	if(isset($variables['view']) && isset($variables['theme_hook_original'])){
+		$view = $variables['view'];
+    $hook = $variables['theme_hook_original'];
+    $suggestion = $hook . '__' . normalize($view->id());
+    if(!in_array($suggestion, $suggestions)) $suggestions[] = $suggestion;
+    $suggestion = $hook . '__' . normalize($view->current_display);
+    if(!in_array($suggestion, $suggestions)) $suggestions[] = $suggestion;
+	}
+	return $suggestions;
+}

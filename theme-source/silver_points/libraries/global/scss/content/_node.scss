@@ -1,0 +1,26 @@
+article{
+  &.tool{
+    &.teaser{
+      @extend .d-flex, .flex-column-reverse;
+      border: 1px solid black;
+      padding: 1rem;
+
+      .content{
+        .field-preview-image{
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        .field-description{
+          p{
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+    &.full{
+
+    }
+  }
+}

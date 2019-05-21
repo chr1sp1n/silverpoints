@@ -1,7 +1,10 @@
 .brand{
-	text-align: center;
+  text-align: center;
+  background-color: $footer-background;
+  color: $footer-foreground;
+
 	&>.line{
-		border-bottom: 2px solid black;
+		border-bottom: 2px solid $footer-foreground;
 		flex:0;
 		opacity: 0;
 	}
@@ -25,7 +28,7 @@
 		&:before,
 		&:after{
 			display: inline-block;
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid $footer-foreground;
 		}
 	}
 }
