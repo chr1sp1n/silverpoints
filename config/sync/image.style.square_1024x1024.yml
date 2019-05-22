@@ -1,0 +1,15 @@
+uuid: be8fbbe5-94a1-4520-a2ca-da6db0c40324
+langcode: en
+status: true
+dependencies: {  }
+name: square_1024x1024
+label: 'Square 1024x1024'
+effects:
+  d3b1aaed-c74a-4c67-993c-f1ce8e4a87e6:
+    uuid: d3b1aaed-c74a-4c67-993c-f1ce8e4a87e6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 1024
+      anchor: center-center

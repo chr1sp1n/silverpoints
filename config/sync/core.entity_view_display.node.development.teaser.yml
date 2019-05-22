@@ -39,3 +39,4 @@ hidden:
   field_dvl_notes: true
   field_fix_bath: true
   field_stop_bath: true
+  langcode: true

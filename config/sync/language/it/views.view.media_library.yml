@@ -1,0 +1,51 @@
+display:
+  default:
+    display_title: Principale
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
+          sort_asc_label: Asc
+          sort_desc_label: Disc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Voci per pagina'
+            items_per_page_options_all_label: '- Tutto -'
+            offset_label: Scostamento
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        media_bulk_form:
+          action_title: Azione
+      filters:
+        status:
+          expose:
+            label: 'Stato di pubblicazione'
+          group_info:
+            label: Pubblicato
+            group_items:
+              1:
+                title: Pubblicato
+              2:
+                title: 'Non pubblicato'
+        name:
+          expose:
+            label: Nome
+      sorts:
+        created:
+          expose:
+            label: 'Prima i più recenti'
+      title: Media
+      empty:
+        area_text_custom:
+          content: 'Non è disponibile alcun contributo mediale.'
+  page:
+    display_title: Pagina
+    display_options:
+      menu:
+        title: Media
+  widget:
+    display_title: Widget

@@ -1,0 +1,18 @@
+uuid: 6995c13a-efe9-4a0d-8732-bfb66b9b124e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.fix_bath
+id: taxonomy_term.fix_bath.name
+field_name: name
+entity_type: taxonomy_term
+bundle: fix_bath
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

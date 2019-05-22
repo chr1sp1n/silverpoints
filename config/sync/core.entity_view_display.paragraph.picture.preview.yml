@@ -4,15 +4,17 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.picture.field_aperture
     - field.field.paragraph.picture.field_date
     - field.field.paragraph.picture.field_filters
     - field.field.paragraph.picture.field_lens
     - field.field.paragraph.picture.field_location
     - field.field.paragraph.picture.field_picture
+    - field.field.paragraph.picture.field_shutter_speed
+    - image.style.square_1024x1024
     - paragraphs.paragraphs_type.picture
   module:
     - datetime
-    - geofield
     - svg_image
 id: paragraph.picture.preview
 targetEntityType: paragraph
@@ -20,50 +22,30 @@ bundle: picture
 mode: preview
 content:
   field_date:
-    weight: 2
-    label: above
+    type: datetime_default
+    weight: 1
+    region: content
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_filters:
-    weight: 4
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_lens:
-    weight: 3
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_location:
-    weight: 1
-    label: above
-    settings:
-      output_format: wkt
-      output_escape: true
-    third_party_settings: {  }
-    type: geofield_default
-    region: content
   field_picture:
     weight: 0
-    label: above
+    label: hidden
     settings:
+      image_style: square_1024x1024
+      image_link: ''
+      svg_render_as_image: '1'
       svg_attributes:
         width: ''
         height: ''
-      svg_render_as_image: true
-      image_style: ''
-      image_link: ''
     third_party_settings: {  }
     type: image
     region: content
-hidden: {  }
+hidden:
+  field_aperture: true
+  field_filters: true
+  field_lens: true
+  field_location: true
+  field_shutter_speed: true

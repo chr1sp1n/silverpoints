@@ -1,0 +1,20 @@
+uuid: 5e8abc90-6398-4cd0-b57f-28349792b17f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.stop_bath
+  module:
+    - path
+id: taxonomy_term.stop_bath.path
+field_name: path
+entity_type: taxonomy_term
+bundle: stop_bath
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,21 @@
+uuid: 728acd7f-756d-495f-a09e-d172254914d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.film
+  module:
+    - text
+id: node.film.field_notes
+field_name: field_notes
+entity_type: node
+bundle: film
+label: Notes
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

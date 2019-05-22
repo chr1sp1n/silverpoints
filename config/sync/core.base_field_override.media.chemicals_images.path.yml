@@ -1,0 +1,20 @@
+uuid: fa0ef247-81e4-4606-b5a8-d26fc70a8013
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.chemicals_images
+  module:
+    - path
+id: media.chemicals_images.path
+field_name: path
+entity_type: media
+bundle: chemicals_images
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

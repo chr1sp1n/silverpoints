@@ -1,0 +1,20 @@
+uuid: 6f2725c2-23a5-4582-8348-2b8d533f5e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.development_bath
+  module:
+    - path
+id: taxonomy_term.development_bath.path
+field_name: path
+entity_type: taxonomy_term
+bundle: development_bath
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

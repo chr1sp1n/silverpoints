@@ -1,0 +1,63 @@
+uuid: 46ef5e21-dfbf-4d10-ac74-4a7f03e6815b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_shutter_speed
+field_name: field_shutter_speed
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1000000'
+      label: '1'
+    -
+      value: '500000'
+      label: 1/2
+    -
+      value: '250000'
+      label: 1/4
+    -
+      value: '125000'
+      label: 1/8
+    -
+      value: '66.666'
+      label: 1/15
+    -
+      value: '33.333'
+      label: 1/30
+    -
+      value: '16.666'
+      label: 1/60
+    -
+      value: '8000'
+      label: 1/125
+    -
+      value: '4000'
+      label: 1/250
+    -
+      value: '2000'
+      label: 1/500
+    -
+      value: '1000'
+      label: 1/1000
+    -
+      value: '500'
+      label: 1/2000
+    -
+      value: ‭250‬
+      label: 1/4000
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

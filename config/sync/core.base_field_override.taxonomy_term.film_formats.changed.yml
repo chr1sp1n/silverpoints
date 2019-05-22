@@ -1,0 +1,18 @@
+uuid: f4d43ee4-43e4-4ee5-a7c1-b04b7a2fea4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.film_formats
+id: taxonomy_term.film_formats.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: film_formats
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

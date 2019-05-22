@@ -1,0 +1,20 @@
+uuid: 91a427c2-ecab-40e8-aaa0-8f5cd1afaa62
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.chemicals_images
+id: media.chemicals_images.name
+field_name: name
+entity_type: media
+bundle: chemicals_images
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

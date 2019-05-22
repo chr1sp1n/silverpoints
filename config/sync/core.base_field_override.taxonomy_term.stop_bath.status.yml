@@ -1,0 +1,22 @@
+uuid: 35a45491-d1d6-41d4-b397-70f7ccf65135
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.stop_bath
+id: taxonomy_term.stop_bath.status
+field_name: status
+entity_type: taxonomy_term
+bundle: stop_bath
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

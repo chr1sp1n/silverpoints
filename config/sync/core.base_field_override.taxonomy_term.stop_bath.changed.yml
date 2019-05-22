@@ -1,0 +1,18 @@
+uuid: ca39ce31-edad-4c2e-b9f1-99f6e3f9b0cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.stop_bath
+id: taxonomy_term.stop_bath.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: stop_bath
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

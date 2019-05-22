@@ -1,0 +1,18 @@
+uuid: 29d6c0fc-eceb-476b-93b2-c59f7af3eceb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.development_bath
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.development_bath
+target_entity_type_id: taxonomy_term
+target_bundle: development_bath
+default_langcode: site_default
+language_alterable: false

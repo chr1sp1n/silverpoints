@@ -1,0 +1,22 @@
+uuid: 29f66500-b224-42cc-ae11-c0cd92a99972
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.film_formats
+id: taxonomy_term.film_formats.status
+field_name: status
+entity_type: taxonomy_term
+bundle: film_formats
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

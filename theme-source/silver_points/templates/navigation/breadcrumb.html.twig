@@ -14,7 +14,7 @@
     {% for item in breadcrumb %}
       <li>
         {% if item.url %}
-          <a href="{{ item.url }}">{{ item.text }}</a>
+          <a href="{{ item.url }}"><span>{{ item.text }}</span></a>{% if loop.last %}&nbsp;>{% endif %}
         {% else %}
           {{ item.text }}
         {% endif %}

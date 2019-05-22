@@ -1,0 +1,20 @@
+uuid: 19f05b0a-0bdf-41c0-9a90-b2db3a0a82de
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.film_image
+  module:
+    - path
+id: media.film_image.path
+field_name: path
+entity_type: media
+bundle: film_image
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

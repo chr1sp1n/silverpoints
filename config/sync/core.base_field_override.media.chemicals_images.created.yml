@@ -1,0 +1,18 @@
+uuid: 686300a3-618f-4e03-b1e3-1d50734ff78b
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.chemicals_images
+id: media.chemicals_images.created
+field_name: created
+entity_type: media
+bundle: chemicals_images
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

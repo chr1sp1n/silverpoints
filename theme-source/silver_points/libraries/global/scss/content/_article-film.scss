@@ -1,0 +1,25 @@
+article{
+  &.film{
+    &.teaser{
+      @extend .d-flex, .flex-column-reverse;
+      border: 1px solid black;
+      padding: 1rem;
+
+      .content{
+        .field-frames{
+          text-align: center;
+          &>div{
+            margin-bottom: $grid-gutter-width;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    &.full{
+
+    }
+  }
+}

@@ -1,23 +1,26 @@
 body{
-  position: absolute;
-  top:0;
-  left:0;
-  height: 100%;
-  width: 100%;
-  & > div{
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
+  // position: absolute;
+  // top:0;
+  // left:0;
+  // height: 100%;
+  // width: 100%;
+  // & > div{
+  //   position: absolute;
+  //   top:0;
+  //   left:0;
+  //   height: 100%;
+  //   width: 100%;
+  //   overflow: hidden;
+  // }
 }
 #main{
   opacity: 0;
-  position: absolute;
-  top: $header-height;
   width: 100%;
-  height: calc(100% - #{$header-height + $footer-height});
-  overflow: hidden;
+  min-height: calc(100vh - #{$header-height + $footer-height + ($grid-gutter-width * 2)});
+  margin-top: $header-height + $grid-gutter-width;
+  margin-bottom: $footer-height + $grid-gutter-width;
+  // position: absolute;
+  // top: $header-height;
+  // height: calc(100% - #{$header-height + $footer-height});
+  // overflow: hidden;
 }

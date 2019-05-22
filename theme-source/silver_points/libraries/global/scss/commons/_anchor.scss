@@ -1,10 +1,23 @@
-
 a{
   color: $footer-background;
   display: inline-block;
   position: relative;
   transition: color .4s ease-out;
+  transition-delay: .1s;
+  * { position: relative; }
 
+  &:focus:not(.no-decoration),
+  &:active:not(.no-decoration),
+  &.active:not(.no-decoration),
+  &.is-active:not(.no-decoration),
+  &:hover:not(.no-decoration){
+    transition-delay: 0s;
+    text-decoration: none;
+    color: $footer-foreground;
+    &:before{
+      width: 100%;
+    }
+  }
 
   &:before{
     display: block;
@@ -18,15 +31,8 @@ a{
     left: 0;
     height: 100%;
   }
-  &:focus:not(.no-decoration),
-  &:active:not(.no-decoration),
-  &.active:not(.no-decoration),
-  &:hover:not(.no-decoration){
-    * { position: relative;}
-    text-decoration: none;
-    color: $footer-foreground;
-    &:before{
-      width: 100%;
-    }
-  }
+}
+
+ul.links a.is-active {
+  color: $footer-foreground;
 }

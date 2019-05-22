@@ -1,0 +1,20 @@
+uuid: f07ce6a5-c56b-478e-bef0-e54aadff6a49
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.chemicals_images
+id: media.chemicals_images.uid
+field_name: uid
+entity_type: media
+bundle: chemicals_images
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

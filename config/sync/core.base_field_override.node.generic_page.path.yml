@@ -1,0 +1,20 @@
+uuid: 30c69828-f26c-4e43-9a35-e27846070a50
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.generic_page
+  module:
+    - path
+id: node.generic_page.path
+field_name: path
+entity_type: node
+bundle: generic_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

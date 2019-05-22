@@ -12,8 +12,22 @@ dependencies:
     - node.type.development
   module:
     - datetime
+    - field_group
     - paragraphs
     - text
+third_party_settings:
+  field_group:
+    group_shout_data:
+      children: {  }
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Shout data'
 id: node.development.default
 targetEntityType: node
 bundle: development
@@ -63,6 +77,13 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:

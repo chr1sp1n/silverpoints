@@ -1,0 +1,40 @@
+uuid: ce9ab12f-5017-421e-b100-4e5d5983ebcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.film.field_frames
+    - field.field.node.film.field_notes
+    - node.type.film
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.film.default
+targetEntityType: node
+bundle: film
+mode: default
+content:
+  field_frames:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_notes:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,18 @@
+uuid: 81976482-09fb-40c0-8196-3993053329a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.film_image
+id: media.film_image.created
+field_name: created
+entity_type: media
+bundle: film_image
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

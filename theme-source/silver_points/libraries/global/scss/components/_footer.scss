@@ -1,12 +1,13 @@
 
 footer{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: $footer-height;
   background-color: $footer-background;
   color: $footer-foreground;
   padding-top: 20px;
+  z-index: $zindex-fixed;
 
   &>.menu{
     position: absolute;
@@ -19,6 +20,12 @@ footer{
       &.active{
         a{ color: $footer-foreground; }
       }
+
+      &:hover{
+        a{ color: $footer-foreground; }
+        & + li{ a { color: transparent; } }
+      }
+
     }
     &.main{
       padding-left: 30px;
@@ -42,10 +49,10 @@ footer{
         text-decoration: none;
         width: 40px;
         height: 26px;
-        &:focus,
-        &:hover{
-          color: $footer-foreground;
-        }
+        // &:focus,
+        // &:hover{
+        //   color: $footer-foreground;
+        // }
         position: relative;
         &>span{
           display: block;

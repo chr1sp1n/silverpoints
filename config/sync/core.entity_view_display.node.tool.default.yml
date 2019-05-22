@@ -26,4 +26,5 @@ content:
 hidden:
   field_description: true
   field_preview_image: true
+  langcode: true
   links: true

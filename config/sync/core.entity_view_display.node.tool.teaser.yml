@@ -34,9 +34,10 @@ content:
       image_link: content
       svg_render_as_image: '1'
       svg_attributes:
-        width: ''
-        height: ''
+        width: '512'
+        height: '512'
     third_party_settings: {  }
 hidden:
   field_block: true
+  langcode: true
   links: true

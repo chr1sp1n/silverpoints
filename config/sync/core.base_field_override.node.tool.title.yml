@@ -1,0 +1,18 @@
+uuid: 058f10f8-93a6-4216-a25a-6924759bd9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tool
+id: node.tool.title
+field_name: title
+entity_type: node
+bundle: tool
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

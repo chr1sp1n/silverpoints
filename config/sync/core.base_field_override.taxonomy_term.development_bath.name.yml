@@ -1,0 +1,18 @@
+uuid: 9f35e484-764b-4a58-b68e-dff5ec9d41b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.development_bath
+id: taxonomy_term.development_bath.name
+field_name: name
+entity_type: taxonomy_term
+bundle: development_bath
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

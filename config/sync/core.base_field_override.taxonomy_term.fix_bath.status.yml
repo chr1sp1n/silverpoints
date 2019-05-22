@@ -1,0 +1,22 @@
+uuid: 6d4b5fb5-466d-4df7-9cbc-248006e88c56
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.fix_bath
+id: taxonomy_term.fix_bath.status
+field_name: status
+entity_type: taxonomy_term
+bundle: fix_bath
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

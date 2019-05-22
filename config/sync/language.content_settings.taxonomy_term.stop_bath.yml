@@ -1,0 +1,18 @@
+uuid: 6c98457d-af12-4eb9-8df7-396ce45a7dc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.stop_bath
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.stop_bath
+target_entity_type_id: taxonomy_term
+target_bundle: stop_bath
+default_langcode: site_default
+language_alterable: false

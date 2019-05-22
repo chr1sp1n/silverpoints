@@ -1,0 +1,20 @@
+uuid: ab12250b-d221-4e8e-a881-146ccf4aea9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.fix_bath
+  module:
+    - path
+id: taxonomy_term.fix_bath.path
+field_name: path
+entity_type: taxonomy_term
+bundle: fix_bath
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

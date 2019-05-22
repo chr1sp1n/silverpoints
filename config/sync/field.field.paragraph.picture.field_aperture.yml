@@ -1,0 +1,21 @@
+uuid: e1be4e80-eac7-49ce-b942-3db12882353a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_aperture
+    - paragraphs.paragraphs_type.picture
+  module:
+    - options
+id: paragraph.picture.field_aperture
+field_name: field_aperture
+entity_type: paragraph
+bundle: picture
+label: Aperture
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -220,7 +220,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           30px !default;
+$grid-gutter-width:           15px !default;
 
 
 // Components
@@ -240,7 +240,7 @@ $border-radius-sm:            .2rem !default;
 $rounded-pill:                50rem !default;
 
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-sm-inset:               0 .125rem .25rem rgba($black, .075) inset !default;
+$box-shadow-sm-inset:         0 .125rem .25rem rgba($black, .075) inset !default;
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
@@ -1040,17 +1040,14 @@ $figure-caption-color:              $gray-600 !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-y:              .75rem !default;
+$breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              1rem !default;
-$breadcrumb-item-padding:           .5rem !default;
-
-$breadcrumb-margin-bottom:          1rem !default;
-
+$breadcrumb-item-padding:           .75rem !default;
+$breadcrumb-margin-bottom:          0 !default;
 $breadcrumb-bg:                     $gray-200 !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("/") !default;
-
+$breadcrumb-divider:                quote(">") !default;
 $breadcrumb-border-radius:          $border-radius !default;
 
 

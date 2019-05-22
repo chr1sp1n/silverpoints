@@ -1,0 +1,20 @@
+uuid: 87cadf99-aca5-45dd-8d14-45b3489d773c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.development_bath
+  module:
+    - text
+id: taxonomy_term.development_bath.description
+field_name: description
+entity_type: taxonomy_term
+bundle: development_bath
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
