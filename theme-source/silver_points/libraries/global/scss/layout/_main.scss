@@ -14,7 +14,7 @@ body{
   // }
 }
 #main{
-  opacity: 0;
+  //opacity: 0;
   width: 100%;
   min-height: calc(100vh - #{$header-height + $footer-height + ($grid-gutter-width * 2)});
   margin-top: $header-height + $grid-gutter-width;
