@@ -4,7 +4,9 @@ article{
       @extend .d-flex, .flex-column-reverse;
       border: 1px solid black;
       padding: 1rem;
-
+      h2{
+        margin-top: 1rem;
+      }
       .content{
         .field-frames{
           text-align: center;
@@ -14,6 +16,31 @@ article{
               width: 100%;
               height: auto;
             }
+          }
+        }
+        & > .text-field{
+          & > div{
+            padding-left: calc(26px + 1rem);
+            margin-left: 1rem;
+            border-left: 1px solid black;
+            background-position: 1rem center;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            &:first-of-type{
+              margin-left: 0;
+              border-left: none;
+              padding-left: 26px;
+              background-position: 0 center;
+            }
+          }
+          & > .field-camera{
+            background-image: url('../img/camera.svg');
+          }
+          & > .field-film{
+            background-image: url('../img/film.svg');
+          }
+          & > .field-development{
+            background-image: url('../img/dvl.svg');
           }
         }
       }

@@ -110,14 +110,18 @@
   {# <div{{ content_attributes.addClass('node__content') }}> #}
   <div class="content">
     {% if content.field_frames %}
-    <div class="row field-frames">
-      {% if content.field_frames.0 %}<div class="col-12 col-sm-6">{{ content.field_frames.0 }}</div>{% endif %}
-      {% if content.field_frames.1 %}<div class="col-12 col-sm-6">{{ content.field_frames.1 }}</div>{% endif %}
-      {% if content.field_frames.2 %}<div class="col-12 col-sm-6">{{ content.field_frames.2 }}</div>{% endif %}
-      {% if content.field_frames.3 %}<div class="col-12 col-sm-6">{{ content.field_frames.3 }}</div>{% endif %}
-    </div>
+    <a href="{{ url }}" rel="bookmark" class="no-decoration">
+      <div class="row field-frames">
+        {% if content.field_frames.0 %}<div class="col-12 col-sm-6">{{ content.field_frames.0 }}</div>{% endif %}
+        {% if content.field_frames.1 %}<div class="col-12 col-sm-6">{{ content.field_frames.1 }}</div>{% endif %}
+        {% if content.field_frames.2 %}<div class="col-12 col-sm-6">{{ content.field_frames.2 }}</div>{% endif %}
+        {% if content.field_frames.3 %}<div class="col-12 col-sm-6">{{ content.field_frames.3 }}</div>{% endif %}
+      </div>
+    </a>
     {% endif %}
-    {{ content|without('field_frames') }}
+    <div class="d-flex text-field">
+      {{ content|without('field_frames') }}
+    </div>
   </div>
 
 </article>

@@ -20,12 +20,12 @@ footer{
       &.active{
         a{ color: $footer-foreground; }
       }
-
       &:hover{
         a{ color: $footer-foreground; }
-        & + li{ a { color: transparent; } }
       }
-
+      &.temp-off{
+        a { color: transparent; }
+      }
     }
     &.main{
       padding-left: 30px;
