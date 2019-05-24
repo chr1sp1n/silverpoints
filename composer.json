@@ -32,6 +32,7 @@
         "drupal/smtp": "^1.0@beta",
         "drupal/structure_sync": "^1.16",
         "drupal/svg_image": "^1.9",
+        "drupal/time_field": "^1.12",
         "drupal/token": "^1.5",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
