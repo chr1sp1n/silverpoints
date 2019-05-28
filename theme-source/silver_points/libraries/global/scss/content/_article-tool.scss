@@ -1,9 +1,24 @@
 article{
   &.tool{
     &.teaser{
-      @extend .d-flex, .flex-column-reverse;
+      $size: 420px;
+      $trigger: 175vh;
+
+      @extend .d-flex, .flex-column-reverse, .shadow;
+      @extend .mb-3;
+      margin: 0 auto;
       border: 1px solid black;
       padding: 1rem;
+      background-color: white;
+
+      @media only screen and (min-width: $trigger) and (min-height: 750px) {
+        &{
+          width: calc(100vh - #{$size - $grid-gutter-width - 3});
+        }
+      }
+      h2{
+        text-align: center;
+      }
 
       .content{
         .field-preview-image{

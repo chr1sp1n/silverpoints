@@ -1,0 +1,21 @@
+uuid: bbc74681-edf9-4f2c-af52-31de4bd91469
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_development_bath_time
+    - paragraphs.paragraphs_type.development_process
+  module:
+    - time_field
+id: paragraph.development_process.field_development_bath_time
+field_name: field_development_bath_time
+entity_type: paragraph
+bundle: development_process
+label: 'Development bath time'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time

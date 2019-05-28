@@ -1,0 +1,21 @@
+uuid: 2b1c1d36-d50d-46c8-94fa-be5357f7dec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nominal_iso
+    - taxonomy.vocabulary.film_model
+  module:
+    - options
+id: taxonomy_term.film_model.field_nominal_iso
+field_name: field_nominal_iso
+entity_type: taxonomy_term
+bundle: film_model
+label: 'Nominal ISO'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

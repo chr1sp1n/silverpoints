@@ -1,0 +1,20 @@
+uuid: ff54d53a-e84e-4eb2-b3da-604703f7488b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.camera_model
+  module:
+    - path
+id: taxonomy_term.camera_model.path
+field_name: path
+entity_type: taxonomy_term
+bundle: camera_model
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

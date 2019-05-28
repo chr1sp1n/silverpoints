@@ -1,0 +1,11 @@
+uuid: f82e1f34-7389-4be5-8be3-f540c05abebe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:0b5a65e9-7ef6-4521-8f6f-6882431544a3'
+id: development_process
+label: 'Development process'
+icon_uuid: 0b5a65e9-7ef6-4521-8f6f-6882431544a3
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,18 @@
+uuid: 982dba1a-b138-4a01-a6ab-d68de91a2033
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.camera_model
+id: taxonomy_term.camera_model.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: camera_model
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

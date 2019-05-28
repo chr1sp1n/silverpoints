@@ -1,0 +1,29 @@
+uuid: 668dd9da-c1cd-441b-89e5-973b599eb2f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fix_bath
+    - paragraphs.paragraphs_type.development_process
+    - taxonomy.vocabulary.fix_bath
+id: paragraph.development_process.field_fix_bath
+field_name: field_fix_bath
+entity_type: paragraph
+bundle: development_process
+label: 'Fix bath'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fix_bath: fix_bath
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,6 +1,7 @@
-label: 'Pagina iniziale'
-description: 'Tutti i contenuti promossi in prima pagina.'
 display:
+  page_home:
+    display_options:
+      title: Benventi
   default:
     display_options:
       exposed_form:
@@ -24,3 +25,5 @@ display:
     display_title: Principale
   feed_1:
     display_title: Feed
+label: 'Pagina iniziale'
+description: 'Tutti i contenuti promossi in prima pagina.'

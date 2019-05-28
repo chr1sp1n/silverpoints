@@ -1,0 +1,8 @@
+uuid: 0b8a2b0e-6779-41de-bf0b-af56baf617af
+langcode: en
+status: true
+dependencies: {  }
+name: 'Film model'
+vid: film_model
+description: ''
+weight: 0

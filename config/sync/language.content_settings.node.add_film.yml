@@ -1,0 +1,16 @@
+uuid: bb2cba0c-0ab7-4dd4-ab86-e2e855c2fc9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.add_film
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.add_film
+target_entity_type_id: node
+target_bundle: add_film
+default_langcode: site_default
+language_alterable: false

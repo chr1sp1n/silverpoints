@@ -1,36 +1,63 @@
+
+
 article{
   &.film{
     &.teaser{
-      @extend .d-flex, .flex-column-reverse;
+      $size: 420px;
+      $trigger: 175vh;
+
+      @extend .d-flex, .flex-column-reverse, .shadow;
+      @extend .mb-3;
+      margin: 0 auto;
       border: 1px solid black;
       padding: 1rem;
-      h2{
-        margin-top: 1rem;
+      background-color: white;
+
+      @media only screen and (min-width: $trigger) and (min-height: 750px) {
+        &{
+          width: calc(100vh - #{$size - $grid-gutter-width - 3});
+        }
       }
+
+      h2{
+        text-align: center;
+      }
+
       .content{
         .field-frames{
           text-align: center;
+          padding: $grid-gutter-width / 2;
+          padding-top: 0;
+          @media only screen and (min-width: $trigger) and (min-height: 750px) {
+            &{
+              height: calc(100vh - #{$size});
+              width: calc(100vh - #{$size});
+            }
+          }
           &>div{
-            margin-bottom: $grid-gutter-width;
-            img{
-              width: 100%;
-              height: auto;
+            padding:0;
+            height: 50%;
+            .field-picture{
+              height: 100%;
+              img{
+                width: 100%;
+                height: 100%;
+              }
             }
           }
         }
-        & > .text-field{
+        .text-field{
+          margin-top: .5rem;
+          padding: 0 1rem 1rem 1rem;
           & > div{
-            padding-left: calc(26px + 1rem);
-            margin-left: 1rem;
-            border-left: 1px solid black;
-            background-position: 1rem center;
+            @extend .col-6;
             background-size: 20px 20px;
             background-repeat: no-repeat;
-            &:first-of-type{
-              margin-left: 0;
-              border-left: none;
-              padding-left: 26px;
-              background-position: 0 center;
+            padding-left: 2rem;
+            background-position: 0 center;
+            margin-bottom: .5rem;
+            &:last-of-type{
+              margin-bottom: 0;
             }
           }
           & > .field-camera{
@@ -44,6 +71,7 @@ article{
           }
         }
       }
+
     }
     &.full{
 

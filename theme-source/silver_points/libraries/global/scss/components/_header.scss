@@ -8,6 +8,8 @@ header{
   max-height: $header-height;
   background-color: $footer-foreground;
   z-index: $zindex-fixed;
+  box-shadow: -10px 10px 50px rgba(120,120,120,.25);
+
   .page-title{
     width: 100%;
     text-align: center;

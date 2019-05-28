@@ -1,0 +1,34 @@
+uuid: c4fedff5-6223-4621-b0be-51ab372b2c99
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.development_process.field_development_bath
+    - field.field.paragraph.development_process.field_development_bath_time
+    - field.field.paragraph.development_process.field_development_date
+    - field.field.paragraph.development_process.field_development_dilution
+    - field.field.paragraph.development_process.field_development_notes
+    - field.field.paragraph.development_process.field_fix_bath
+    - field.field.paragraph.development_process.field_stop
+    - paragraphs.paragraphs_type.development_process
+id: paragraph.development_process.preview
+targetEntityType: paragraph
+bundle: development_process
+mode: preview
+content:
+  field_development_bath:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_development_bath_time: true
+  field_development_date: true
+  field_development_dilution: true
+  field_development_notes: true
+  field_fix_bath: true
+  field_stop: true

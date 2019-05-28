@@ -4,12 +4,22 @@ global:
     theme:
       libraries/global/css/styles.css: {}
   js:
-    libraries/global/js/libraries/jquery.min.js: {}
     libraries/global/js/libraries/TweenLite.min.js: {}
     libraries/global/js/libraries/EasePack.min.js: {}
     libraries/global/js/libraries/CSSPlugin.min.js: {}
     libraries/global/js/animations.js: {}
     libraries/global/js/main.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+add_film:
+  version: 1.x
+  css:
+    theme:
+      libraries/add_film/css/styles.css: {}
+  js:
+    libraries/add_film/js/main.js: {}
   dependencies:
     - core/drupal
     - core/jquery

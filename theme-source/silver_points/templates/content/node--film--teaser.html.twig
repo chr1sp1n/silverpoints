@@ -83,7 +83,8 @@
 {%
   set classes = [
     node.bundle|clean_class,
-    view_mode|clean_class
+    view_mode|clean_class,
+    'overflow-hidden'
   ]
 %}
 {# {{ attach_library('classy/node') }} #}
@@ -110,17 +111,19 @@
   {# <div{{ content_attributes.addClass('node__content') }}> #}
   <div class="content">
     {% if content.field_frames %}
-    <a href="{{ url }}" rel="bookmark" class="no-decoration">
-      <div class="row field-frames">
-        {% if content.field_frames.0 %}<div class="col-12 col-sm-6">{{ content.field_frames.0 }}</div>{% endif %}
-        {% if content.field_frames.1 %}<div class="col-12 col-sm-6">{{ content.field_frames.1 }}</div>{% endif %}
-        {% if content.field_frames.2 %}<div class="col-12 col-sm-6">{{ content.field_frames.2 }}</div>{% endif %}
-        {% if content.field_frames.3 %}<div class="col-12 col-sm-6">{{ content.field_frames.3 }}</div>{% endif %}
-      </div>
-    </a>
+      <a href="{{ url }}" rel="bookmark" class="no-decoration">
+        <div class="row field-frames">
+          {% if content.field_frames.0 %}<div class="col-6">{{ content.field_frames.0 }}</div>{% endif %}
+          {% if content.field_frames.1 %}<div class="col-6">{{ content.field_frames.1 }}</div>{% endif %}
+          {% if content.field_frames.2 %}<div class="col-6">{{ content.field_frames.2 }}</div>{% endif %}
+          {% if content.field_frames.3 %}<div class="col-6">{{ content.field_frames.3 }}</div>{% endif %}
+        </div>
+      </a>
     {% endif %}
-    <div class="d-flex text-field">
-      {{ content|without('field_frames') }}
+    <div class="container-fluid">
+      <div class="row text-field">
+        {{ content|without('field_frames') }}
+      </div>
     </div>
   </div>
 

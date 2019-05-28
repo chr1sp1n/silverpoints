@@ -5,18 +5,18 @@ dependencies:
   module:
     - node
 id: films
-label: Film
+label: Films
 type: 'canonical_entities:node'
-pattern: '/film/[node:title]'
+pattern: '/films/[node:title]'
 selection_criteria:
-  9330fcf3-21f0-470e-9f69-04c5ceb8f6fd:
+  6792bbc1-6845-4969-aa54-b283db4a37b7:
     id: node_type
     bundles:
       film: film
     negate: false
     context_mapping:
       node: node
-    uuid: 9330fcf3-21f0-470e-9f69-04c5ceb8f6fd
+    uuid: 6792bbc1-6845-4969-aa54-b283db4a37b7
 selection_logic: and
 weight: -5
 relationships: {  }

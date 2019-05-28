@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Fix bath'
 vid: fix_bath
 description: ''
-hierarchy: 0
 weight: 0

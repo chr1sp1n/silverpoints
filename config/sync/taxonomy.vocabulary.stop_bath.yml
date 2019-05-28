@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Stop bath'
 vid: stop_bath
 description: ''
-hierarchy: 0
 weight: 0

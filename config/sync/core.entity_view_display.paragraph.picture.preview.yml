@@ -11,7 +11,7 @@ dependencies:
     - field.field.paragraph.picture.field_location
     - field.field.paragraph.picture.field_picture
     - field.field.paragraph.picture.field_shutter_speed
-    - image.style.square_1024x1024
+    - image.style.square_350x1024
     - paragraphs.paragraphs_type.picture
   module:
     - datetime
@@ -34,7 +34,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: square_1024x1024
+      image_style: square_350x1024
       image_link: ''
       svg_render_as_image: '1'
       svg_attributes:

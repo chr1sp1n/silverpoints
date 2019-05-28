@@ -1,0 +1,22 @@
+uuid: 29b9e8e1-6537-4dec-a81a-8668725ca14c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.camera_model
+id: taxonomy_term.camera_model.status
+field_name: status
+entity_type: taxonomy_term
+bundle: camera_model
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

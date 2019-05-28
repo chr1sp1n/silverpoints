@@ -1,0 +1,20 @@
+uuid: 8dee5006-9e24-4be5-a5ff-5e7cd2abfcd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.film_model
+  module:
+    - path
+id: taxonomy_term.film_model.path
+field_name: path
+entity_type: taxonomy_term
+bundle: film_model
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

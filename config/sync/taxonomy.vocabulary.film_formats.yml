@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Film formats'
 vid: film_formats
 description: ''
-hierarchy: 0
 weight: 0

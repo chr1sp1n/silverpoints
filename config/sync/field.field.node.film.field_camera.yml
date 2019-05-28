@@ -1,0 +1,29 @@
+uuid: 92226dbe-7e4f-45f9-a3e4-c35e3f78f2d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_camera
+    - node.type.film
+    - taxonomy.vocabulary.camera_model
+id: node.film.field_camera
+field_name: field_camera
+entity_type: node
+bundle: film
+label: Camera
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      camera_model: camera_model
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

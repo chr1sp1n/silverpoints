@@ -1,0 +1,8 @@
+uuid: a33925bd-40e3-40de-8af4-c75d8998afeb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Camera model'
+vid: camera_model
+description: ''
+weight: 0

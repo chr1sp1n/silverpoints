@@ -1,0 +1,31 @@
+uuid: c93930ee-8ae8-4d99-a52f-a9368b50b614
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.film_model.field_nominal_iso
+    - taxonomy.vocabulary.film_model
+  module:
+    - options
+    - text
+id: taxonomy_term.film_model.default
+targetEntityType: taxonomy_term
+bundle: film_model
+mode: default
+content:
+  description:
+    label: inline
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nominal_iso:
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true

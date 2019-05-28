@@ -1,0 +1,29 @@
+uuid: 180b4566-4cb5-4494-bc2e-d7213d9cdc90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_development_bath
+    - paragraphs.paragraphs_type.development_process
+    - taxonomy.vocabulary.development_bath
+id: paragraph.development_process.field_development_bath
+field_name: field_development_bath
+entity_type: paragraph
+bundle: development_process
+label: 'Development bath'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      development_bath: development_bath
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 9f8cca4c-6c9f-4b8c-af9a-a16317df368c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.add_film.body
+    - node.type.add_film
+  module:
+    - text
+    - user
+id: node.add_film.default
+targetEntityType: node
+bundle: add_film
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

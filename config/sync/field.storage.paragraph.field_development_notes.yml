@@ -1,0 +1,19 @@
+uuid: a25a8ced-796b-4008-bd3e-0f4d5688bda7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_development_notes
+field_name: field_development_notes
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

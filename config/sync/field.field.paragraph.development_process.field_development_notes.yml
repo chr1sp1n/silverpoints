@@ -1,0 +1,21 @@
+uuid: 57d3d2c2-dd81-4edc-8425-b8f4f59fc718
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_development_notes
+    - paragraphs.paragraphs_type.development_process
+  module:
+    - text
+id: paragraph.development_process.field_development_notes
+field_name: field_development_notes
+entity_type: paragraph
+bundle: development_process
+label: 'Development notes'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

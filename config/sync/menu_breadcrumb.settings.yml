@@ -11,28 +11,33 @@ home_as_site_name: false
 exclude_empty_url: false
 derived_active_trail: false
 menu_breadcrumb_menus:
-  main:
+  films:
     enabled: 1
+    langhandle: 1
     weight: -10
     taxattach: 0
-    langhandle: 0
-  account:
+  main:
     enabled: 1
+    langhandle: 1
     weight: -9
     taxattach: 0
-    langhandle: 0
-  admin:
+  account:
+    enabled: 1
+    langhandle: 1
     weight: -8
-    enabled: 0
     taxattach: 0
-    langhandle: 0
-  footer:
+  admin:
     weight: -7
     enabled: 0
     taxattach: 0
     langhandle: 0
-  tools:
+  footer:
     weight: -6
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  tools:
+    weight: -5
     enabled: 0
     taxattach: 0
     langhandle: 0

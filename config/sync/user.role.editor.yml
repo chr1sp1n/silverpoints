@@ -1,0 +1,29 @@
+uuid: 543a7085-cb3e-4606-86ec-62b49b63e9cd
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -8
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'administer content translation'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'create content translations'
+  - 'delete content translations'
+  - 'edit behavior plugin settings'
+  - 'translate any entity'
+  - 'translate film node'
+  - 'translate generic_page node'
+  - 'translate interface'
+  - 'translate menu_link_content'
+  - 'translate paragraph'
+  - 'translate tool node'
+  - 'update content translations'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

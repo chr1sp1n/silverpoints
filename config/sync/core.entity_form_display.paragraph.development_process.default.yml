@@ -1,0 +1,71 @@
+uuid: de34bb10-b1ce-44f5-bb57-64a337e22f6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.development_process.field_development_bath
+    - field.field.paragraph.development_process.field_development_bath_time
+    - field.field.paragraph.development_process.field_development_date
+    - field.field.paragraph.development_process.field_development_dilution
+    - field.field.paragraph.development_process.field_development_notes
+    - field.field.paragraph.development_process.field_fix_bath
+    - field.field.paragraph.development_process.field_stop
+    - paragraphs.paragraphs_type.development_process
+  module:
+    - datetime
+    - text
+    - time_field
+id: paragraph.development_process.default
+targetEntityType: paragraph
+bundle: development_process
+mode: default
+content:
+  field_development_bath:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_development_bath_time:
+    weight: 1
+    settings:
+      enabled: false
+      step: 5
+    third_party_settings: {  }
+    type: time_widget
+    region: content
+  field_development_date:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_development_dilution:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_development_notes:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_fix_bath:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_stop:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

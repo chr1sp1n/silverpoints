@@ -49,3 +49,41 @@ display:
         title: Media
   widget:
     display_title: Widget
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nome
+      arguments:
+        bundle:
+          exception:
+            title: Tutti
+      header:
+        display_link_grid:
+          label: Griglia
+        display_link_table:
+          label: Tabella
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniatura
+        name:
+          label: Nome
+        uid:
+          label: Autore
+        changed:
+          label: Aggiornato
+      filters:
+        name:
+          expose:
+            label: Nome
+      arguments:
+        bundle:
+          exception:
+            title: Tutti
+      header:
+        display_link_grid:
+          label: Griglia
+        display_link_table:
+          label: Tabella

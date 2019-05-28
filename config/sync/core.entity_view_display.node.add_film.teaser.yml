@@ -1,0 +1,31 @@
+uuid: 61fce245-1b7e-4e91-87c9-0af2ec48dda0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.add_film.body
+    - node.type.add_film
+  module:
+    - text
+    - user
+id: node.add_film.teaser
+targetEntityType: node
+bundle: add_film
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

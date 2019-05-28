@@ -1,0 +1,29 @@
+uuid: 3509b78e-7dc9-4c5d-8f30-72b3c5d0e6c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stop
+    - paragraphs.paragraphs_type.development_process
+    - taxonomy.vocabulary.stop_bath
+id: paragraph.development_process.field_stop
+field_name: field_stop
+entity_type: paragraph
+bundle: development_process
+label: 'Stop bath'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      stop_bath: stop_bath
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

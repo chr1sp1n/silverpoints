@@ -1,5 +1,10 @@
 $transitions-base-time:		.5s;
 
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-sm-inset:         0 .125rem .25rem rgba($black, .075) inset !default;
+$box-shadow:                  5px 5px 20px lightgrey;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+
 // Footer
 $footer-height: 110px;
 $footer-background: black;

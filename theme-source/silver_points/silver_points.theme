@@ -3,7 +3,8 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 // System redirections
-  $route_name= \Drupal::routeMatch()->getRouteName();
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
 
   // Register route or forget password redirected to Homepage
   if ($route_name=='user.pass' || $route_name=='user.register') {
@@ -43,7 +44,7 @@ function silver_points_preprocess_links(&$variables) {
     $url =  $link['link']['#url']->setOptions($options);
     $variables['links'][$key]['href'] = $url->toString();
     $variables['links'][$key]['title'] = $link['link']['#title'];
-    $variables['links'][$key]['language_id'] = $options['language']->getId();
+    $variables['links'][$key]['language_id'] = isset($options['language']) ? $options['language']->getId() : null;
   }
 }
 

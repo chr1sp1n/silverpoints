@@ -1,0 +1,18 @@
+uuid: c722f524-ec64-4575-8929-7816e52a0c3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.film_model
+id: taxonomy_term.film_model.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: film_model
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

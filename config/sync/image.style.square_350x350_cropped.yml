@@ -1,0 +1,15 @@
+uuid: 4af90380-e8f0-4ffc-a492-05f4339d3a84
+langcode: en
+status: true
+dependencies: {  }
+name: square_350x350_cropped
+label: 'Square 350x350 Cropped'
+effects:
+  39c0f864-9f9c-4e7d-b8ab-a0221ea3b858:
+    uuid: 39c0f864-9f9c-4e7d-b8ab-a0221ea3b858
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 350
+      anchor: center-center

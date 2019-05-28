@@ -1,0 +1,18 @@
+uuid: 989493db-9ca2-480e-bba9-e70469c2e1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.film_model
+id: taxonomy_term.film_model.name
+field_name: name
+entity_type: taxonomy_term
+bundle: film_model
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
