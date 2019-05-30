@@ -10,12 +10,35 @@ header{
   z-index: $zindex-fixed;
   box-shadow: -10px 10px 50px rgba(120,120,120,.25);
 
+  @extend .d-flex, .d-md-block, .align-items-center;
+
+  .breadcrumb {
+    @extend .d-none, .d-md-block;
+    &>ol{
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      li:before {
+        content: $breadcrumb-divider !important;
+      }
+    }
+  }
+
+
   .page-title{
     width: 100%;
     text-align: center;
     text-transform: uppercase;
+    @include media-breakpoint-down(sm) {
+      font-size: 125%;
+    }
+    @include media-breakpoint-only(md) {
+      font-size: 150%;
+    }
   }
+
   .language-switch{
+    @extend .d-none, .d-md-block;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -27,6 +50,9 @@ header{
       a {
         padding: 0 .25rem;
         text-transform: uppercase;
+        span:first-of-type{
+          display: none;
+        }
       }
     }
   }

@@ -39,8 +39,7 @@
     {% for item in items %}
       {%
         set classes = [
-          'item',
-          item.in_active_trail ? 'active',
+          item.in_active_trail ? 'is-active',
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}>

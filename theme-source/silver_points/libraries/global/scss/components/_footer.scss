@@ -6,62 +6,79 @@ footer{
   height: $footer-height;
   background-color: $footer-background;
   color: $footer-foreground;
-  padding-top: 20px;
   z-index: $zindex-fixed;
 
-  &>.menu{
+
+
+
+  button.hamburger{
+    @extend .d-md-none;
     position: absolute;
-    padding: 0;
-    margin: 0;
-    top: 38px;
-    &>li{
+    right: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .5s, opacity.5s;
+  }
+
+
+  & > .footer-info{
+    position: absolute;
+    width: 100%;
+    top: 63px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .5s, opacity.5s;
+    & > *{
       display: inline-block;
-      margin: 0;
-      &.active{
-        a{ color: $footer-foreground; }
-      }
-      &:hover{
-        a{ color: $footer-foreground; }
-      }
-      &.temp-off{
-        a { color: transparent; }
-      }
+      max-width: 40%;
+      font-size: .75rem;
+      color: $gray-400;
     }
-    &.main{
-      padding-left: 30px;
-      left: 0;
+  }
+
+
+
+  @extend .d-flex, .align-items-center;
+  & > .brand{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 13px;
+  }
+  #block-silver-points-main-menu{
+    padding-left:2rem;
+    @extend .mr-auto;
+  }
+  #block-mainnavigation-second-level{
+    padding-right:2rem;
+  }
+  #block-silver-points-account-menu{
+    padding-right:2rem;
+  }
+
+
+
+  @include media-breakpoint-down(sm) {
+    height: $footer-height / 1.65;
+  }
+
+  @include media-breakpoint-only(md) {
+    height: $footer-height / 1.3;
+    & > .footer-info{
+      top: 49px;
     }
-    &.account{
-      padding-right: 30px;
-      right: 0;
-    }
-    .menu-icon{
-      a{
-        display: block;
-        text-align: center;
-        background-size: 28px 28px;
-        background-position: center top !important;
-        font-size: 12px;
-        padding-top: 33px;
-        color: transparent;
-        transition: color $transitions-base-time;
-        text-transform: uppercase;
-        text-decoration: none;
-        width: 40px;
-        height: 26px;
-        // &:focus,
-        // &:hover{
-        //   color: $footer-foreground;
-        // }
-        position: relative;
-        &>span{
-          display: block;
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      }
+  }
+
+}
+
+
+body.animation-complete{
+  footer{
+    & > .footer-info,
+    button.hamburger{
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

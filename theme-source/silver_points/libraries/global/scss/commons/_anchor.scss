@@ -19,7 +19,7 @@ a{
     }
   }
 
-  &:before{
+  &:not(.no-decoration):before{
     display: block;
     content: '';
     width: 0;

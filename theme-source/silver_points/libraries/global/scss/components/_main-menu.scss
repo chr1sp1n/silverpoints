@@ -1,0 +1,70 @@
+footer{
+  & > nav{
+    @extend .d-none, .d-md-block;
+    opacity: 0;
+    visibility: hidden;
+    transition:  opacity .5s, visibility .5s;
+
+    & > .menu{
+      margin: 0;
+      & > li {
+        display: inline-block;
+
+
+        a{
+          text-transform: uppercase;
+          text-decoration: none;
+          color: transparent;
+          & > span{
+            white-space: nowrap;
+          }
+        }
+
+        &.menu-icon{
+          margin-top: 7px;
+
+          a{
+            width: 55px;
+            background-position: center top;
+            background-size: 28px 28px;
+            padding-top: calc(28px + .5rem);
+            @extend .d-flex, .justify-content-center;
+          }
+          &:hover,
+          &:focus,
+          &:active,
+          &.is-active{
+            a{
+              color: white;
+            }
+          }
+        }
+
+        &:not(.menu-icon){
+          a{
+            color: white;
+          }
+        }
+
+
+        &.temp-off{
+          &.is-active{
+            a{
+              color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+body.animation-complete{
+  footer{
+    & > nav{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

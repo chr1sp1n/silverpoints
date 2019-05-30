@@ -1,26 +1,28 @@
-body{
-  // position: absolute;
-  // top:0;
-  // left:0;
-  // height: 100%;
-  // width: 100%;
-  // & > div{
-  //   position: absolute;
-  //   top:0;
-  //   left:0;
-  //   height: 100%;
-  //   width: 100%;
-  //   overflow: hidden;
-  // }
-}
 #main{
-  //opacity: 0;
+  opacity: 0;
+  visibility: hidden;
   width: 100%;
   min-height: calc(100vh - #{$header-height + $footer-height + ($grid-gutter-width * 2)});
-  margin-top: $header-height + ($grid-gutter-width / 2);
-  margin-bottom: $footer-height + $grid-gutter-width;
-  // position: absolute;
-  // top: $header-height;
-  // height: calc(100% - #{$header-height + $footer-height});
-  // overflow: hidden;
+  margin-top: 78px + $grid-gutter-width;
+  margin-bottom: 110px;
+  transition: opacity 1s;
+
+  @include media-breakpoint-down(sm) {
+    min-height: calc(100vh - 110px);
+    margin-top: 40px + ($grid-gutter-width / 2);
+    margin-bottom: 67px;
+  }
+
+  @include media-breakpoint-only(md) {
+    min-height: calc(100vh - 160px);
+    margin-top: 68px + $grid-gutter-width;
+    margin-bottom: 85px;
+  }
+}
+
+body.animation-complete{
+  #main{
+    opacity: 1;
+    visibility: visible;
+  }
 }

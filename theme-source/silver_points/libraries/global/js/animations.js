@@ -2,6 +2,7 @@
 ;(function($, TweenLite){
 
   var animations = function(animatioTime){
+    var $body = $('body');
     var $brand = $('.brand');
     var $lines = $brand.find('.line');
     var $words = $brand.find('.words');
@@ -31,9 +32,10 @@
       opacity: 1,
       ease: Power4.easeIn,
       onComplete: function(){
-        TweenLite.to('#main', 1, {
-          opacity: 1, ease: Power4.easeIn
-        });
+        // TweenLite.to('#main', 1, {
+        //   opacity: 1, ease: Power4.easeIn
+        // });
+        $body.addClass('animation-complete');
       }
     });
 

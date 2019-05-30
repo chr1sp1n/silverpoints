@@ -1,0 +1,114 @@
+footer{
+  & > .menu-mobile{
+    position: absolute;
+    bottom: 100%;
+    height: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    transition: height .5s;
+    transition-delay: .25s;
+
+    & > .wrapper{
+      overflow-y: auto;
+      transition: opacity .5s,  visibility .5s;
+      transition-delay: 0;
+      opacity: 0;
+      visibility: hidden;
+      padding: $grid-gutter-width * 3 $grid-gutter-width * 2 $grid-gutter-width * 2 $grid-gutter-width * 2;
+
+      ul{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+        li{
+          margin-bottom: 1rem;
+          a{
+            font-size: 125%;
+            color: white;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-decoration: none;
+            &.is-active{
+              color: black;
+              &:before{
+                background-color: white;
+              }
+            }
+          }
+          &.is-active{
+            & > a{
+              color: black;
+              background-color: white;
+              &:before{
+                background-color: white;
+              }
+            }
+            & > .menu{
+              padding: .5rem 0 0 0;
+              & > li {
+                &:before{
+                  content: '';
+                  background-color: white;
+                  height: 1px;
+                  width: 1rem;
+                  display: inline-block;
+                  position: relative;
+                  top: -6px;
+                  margin-right: .5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & > nav{
+        border-bottom: 1px solid white;
+        margin-bottom: 1rem;
+        .menu-icon{
+          a{
+            background: none;
+          }
+        }
+        &.main{
+        }
+        &.account{
+        }
+      }
+
+      & > .links {
+        &.language-switch{
+          list-style: none;
+          li{
+            display: inline-block;
+            margin-right: 1rem;
+            a{
+              span:last-of-type{
+                display:none;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+body.menu-open{
+  footer{
+    & > .menu-mobile{
+      transition-delay: 0;
+      //transition-timing-function: ease-in;
+      height: calc(100vh - #{($footer-height / 1.65)});
+      & > .wrapper{
+        transition-delay: .5s;
+        //transition-timing-function: ease-out;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

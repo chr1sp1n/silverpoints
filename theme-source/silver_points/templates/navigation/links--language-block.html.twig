@@ -43,7 +43,7 @@
     {%- for item in links -%}
       <li{{ item.attributes }}>
         {%- if item.link -%}
-          <a href="{{ item.href }}" {{ item.attributes }}><span>{{ item.language_id }}</span></a>
+          <a href="{{ item.href }}" {{ item.attributes }}><span>{{ item.text }}</span><span>{{ item.language_id }}</span></a>
         {%- elseif item.text_attributes -%}
           <span{{ item.text_attributes }}>{{ item.text }}</span>
         {%- else -%}

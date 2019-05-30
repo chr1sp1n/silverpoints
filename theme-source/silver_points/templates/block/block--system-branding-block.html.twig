@@ -30,8 +30,15 @@
   {% endif %}
 {% endblock %} #}
 
-<div class="brand d-flex justify-content-center">
+<div class="brand">
   <div class="line"></div>
-  <h1 class="words">{{ site_name }}</h1>
+  <a title="{{ 'Home'|t }}" href="{{ url('<front>') }}">
+    <h1 class="words">{{ site_name }}</h1>
+  </a>
   <div class="line"></div>
+  <button class="hamburger" aria-expanded="true">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
 </div>
