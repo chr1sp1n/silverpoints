@@ -1,0 +1,14 @@
+{
+  "name": "drupal/drupal_utility",
+  "type": "drupal-module",
+  "description": "Drupal utility",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/drupal_utility",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/drupal_utility",
+    "source": "http://cgit.drupalcode.org/drupal_utility"
+  },
+  "require": { }
+}

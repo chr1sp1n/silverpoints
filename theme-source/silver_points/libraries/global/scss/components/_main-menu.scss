@@ -46,14 +46,6 @@ footer{
           }
         }
 
-
-        &.temp-off{
-          &.is-active{
-            a{
-              color: transparent;
-            }
-          }
-        }
       }
     }
   }
@@ -65,6 +57,23 @@ body.animation-complete{
     & > nav{
       opacity: 1;
       visibility: visible;
+    }
+  }
+}
+
+footer{
+  & > nav{
+    & > .menu{
+      & > li {
+        &.temp-off{
+          &:not(.menu-icon),
+          &.is-active{
+            a{
+              color: transparent;
+            }
+          }
+        }
+      }
     }
   }
 }

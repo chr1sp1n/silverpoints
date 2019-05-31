@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * @file
+ * Contains silverpoints_forms.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\silverpoints_forms\Form;
+
+/**
+ * Implements hook_help().
+ */
+function silverpoints_forms_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the silverpoints_forms module.
+    case 'help.page.silverpoints_forms':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('SilverPoints Forms') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function silverpoints_forms_theme() {
+
+  $modulePath = drupal_get_path('module', 'silverpoints_forms');
+
+  $theme = [];
+  $form = new Form\NewFilmForm();
+  $theme[ $form->getFormId() ] = [
+    'render element' => 'form',
+    'template' => 'new-film',
+    'path' => $modulePath . '/templates',
+  ];
+
+
+  // $theme = [
+  //   'new_films_form' => [
+  //     'render element' => 'form',
+  //     'template' => 'new-film',
+  //     'path' => $modulePath . '/templates',
+  //   ]
+  // ];
+
+  return $theme;
+
+}

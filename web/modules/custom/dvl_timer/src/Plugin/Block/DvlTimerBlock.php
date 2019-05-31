@@ -24,8 +24,7 @@ class DvlTimerBlock extends BlockBase {
 
     $build = [
       '#theme' => 'dvl_timer',
-      '#data' => [
-      ],
+      '#data' => [],
       '#module_path' => $modulePath,
       '#base_url' => $base_url,
       '#attached' => [

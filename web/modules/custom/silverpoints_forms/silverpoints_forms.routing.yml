@@ -1,0 +1,18 @@
+
+silverpoints_forms.new_films_form:
+  path: '/films/new'
+  defaults:
+    _form: '\Drupal\silverpoints_forms\Form\NewFilmForm'
+    _title: 'New Film'
+  requirements:
+    _access: 'TRUE'
+
+
+silverpoints_forms.edit_film_form:
+  path: '/films/edit'
+  defaults:
+    _form: '\Drupal\silverpoints_forms\Form\EditFilmForm'
+    _title: 'TestForm'
+  requirements:
+    _access: 'TRUE'
+

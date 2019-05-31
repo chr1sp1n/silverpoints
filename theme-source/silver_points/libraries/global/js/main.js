@@ -3,7 +3,7 @@
 
   window.Animations(2.5);
 
-  var $mainMenu = $('ul.menu.main');
+  var $mainMenu = $('footer ul.menu');
   $mainMenu.find('li').mouseover(function(){
     $mainMenu.find('li').not(this).addClass('temp-off');
     $(this).mouseleave(function(){

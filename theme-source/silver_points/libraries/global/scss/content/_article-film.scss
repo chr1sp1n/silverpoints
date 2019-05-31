@@ -74,7 +74,11 @@ article{
 
     }
     &.full{
-
+      width: 100%;
+      .field-picture{
+        @extend .d-flex, .justify-content-center, .align-items-center;
+        height: 70vh;
+      }
     }
   }
 }

@@ -1,0 +1,7 @@
+new_film:
+  version: 1.x
+  js:
+    libraries/new_film/js/main.js: {}
+  dependencies:
+    - core/jquery
+    - silver_points/bootstrap_collapse

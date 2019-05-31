@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains drupal_utility.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drupal_utility_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the drupal_utility module.
+    case 'help.page.drupal_utility':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drupal utility') . '</p>';
+      return $output;
+
+    default:
+  }
+}

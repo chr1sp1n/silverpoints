@@ -13,7 +13,23 @@ global:
     - core/drupal
     - core/jquery
 
-add_film:
+bootstrap_carousel:
+  version: 1.x
+  js:
+    libraries/bootstrap/js/util.js: {}
+    libraries/bootstrap/js/carousel.js: {}
+  dependencies:
+    - core/jquery
+
+bootstrap_collapse:
+  version: 1.x
+  js:
+    libraries/bootstrap/js/util.js: {}
+    libraries/bootstrap/js/collapse.js: {}
+  dependencies:
+    - core/jquery
+
+film:
   version: 1.x
   css:
     theme:
@@ -23,3 +39,5 @@ add_film:
   dependencies:
     - core/drupal
     - core/jquery
+    - silver_points/bootstrap_carousel
+

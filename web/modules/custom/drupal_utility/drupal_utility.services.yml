@@ -1,0 +1,4 @@
+services:
+  drupal_utility.getter:
+    class: Drupal\drupal_utility\GetterService
+    arguments: []
