@@ -51,3 +51,12 @@ function silverpoints_forms_theme() {
   return $theme;
 
 }
+
+
+function silverpoints_forms_preprocess_file_link(&$variables) {
+  $file = $variables['file'];
+  $variables['file_data'] = [
+    'name' => $file->getFilename(),
+    'href' => $file->url(),
+  ];
+}

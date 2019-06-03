@@ -43,6 +43,22 @@ class NewFilmForm extends FormBase {
       '#weight' => '0',
     ];
 
+    $form['frame'] = [
+      '#type' => 'managed_file',
+      '#name' => 'frame',
+      '#title' => $this->t('Frame'),
+      '#weight' => '0',
+      '#size' => 20,
+      '#multiple' => TRUE,
+      '#description' => t('Image format only'),
+      '#upload_location' => 'public://pictures/',
+      '#upload_validators' => [
+        'file_validate_extensions' => ['png gif jpg jpeg'],
+        'file_validate_size' => [25600000],
+        'file_validate_image_resolution' => ['1920x1920', '400x400'],
+      ],
+    ];
+
     $form['camera_model'] = [
       '#type' => 'select',
       '#title' => $vocabulary->name,
